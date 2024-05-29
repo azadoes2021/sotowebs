@@ -1,0 +1,746 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>  
+</style>
+<body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGNZ3M7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- <div id="seachdiv">
+        <div class="container">
+
+            <div class="form-mb layui-form">
+                <span class="close">
+                    <i class="layui-icon layui-icon-close"></i>
+                </span>
+                <div class="layui-item">
+                    <input type="text" name="k" placeholder="Search..." value="" class="layui-input" />
+                    <button class="layui-btn" lay-submit lay-filter="formSearch"><i>Search</i></button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="navdiv">
+        <div class="form-mb layui-form">
+            <span class="close">
+                <i class="layui-icon layui-icon-close"></i>
+            </span>
+            <div class="layui-item">
+                <input type="text" name="k" placeholder="Search..." value="" class="layui-input" />
+                <button class="layui-btn" lay-submit lay-filter="formSearch"><i>Search</i></button>
+            </div>
+        </div>
+        <div class="nav" id="">
+            <ul>
+                    <li class="">
+                        <a href="/new-products/">신제품</a>
+                    </li>
+                    <li class="">
+                        <a href="/products/floor-standing/">제품</a>
+                            <span class="kg"></span>
+                            <ul>
+                                    <li>
+                                        <a href="/products/floor-standing/">플로어 스탠딩</a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/portable/">가지고 다닐 수 있는</a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/wall-mounted/">잘 고정된</a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/ceiling-type/">천장 장착</a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/uv-sterilizer/">UV 살균기</a>
+                                    </li>
+                                    <li>
+                                        <a href="/products/others/">기타</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="/support/operation-manual/">지원</a>
+                            <span class="kg"></span>
+                            <ul>
+                                    <li>
+                                        <a href="/support/operation-manual/">운영 매뉴얼</a>
+                                    </li>
+                                    <li>
+                                        <a href="/support/video/">동영상</a>
+                                    </li>
+                                    <li>
+                                        <a href="/support/certificates/">인증서</a>
+                                    </li>
+                                    <li>
+                                        <a href="/support/service/">서비스</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="/brand/company/">회사 소개</a>
+                            <span class="kg"></span>
+                            <ul>
+                                    <li>
+                                        <a href="/brand/company/">회사</a>
+                                    </li>
+                                    <li>
+                                        <a href="/brand/certificates/">인증서</a>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="/contact/">문의하기</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div> -->
+
+    			<div class="index-banner">
+				<div class="">
+					<div class="">
+
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False > 대리점 신청 </h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	SOTO는 최고 수준의 공기 소독 및 정화 시스템을 설계하고 제조하기 위해 노력하고 있습니다. 우리와 함께 건강한 공기를 만들어 갑시다.
+																</p>
+																<a href="{% url 'contact' %}#join" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101353_1688.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >UV360 살균기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	스마트 운영 체제는 지연된 시작, 레이더 센서 및 자동 차단 기능을 통해 기존 UV 살균기의 모든 단점을 제거합니다.
+																</p>
+																<a href="{% url 'spuv360' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101739_8753.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >Y9 스마트공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	스마트 음성 및 손동작 제어 시스템과 듀얼 대형 디스플레이 패널로 병원균을 대폭 파괴하고 유해한 화학 오염 물질을 분해합니다.
+																</p>
+																<a href="{% url 'spy9' %}" target="_blank" class="layui-btn buttonHover" >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101423_9790.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >Y6 공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	손 제스처 제어는 사용자 간의 교차 오염을 방지합니다. UV-Photo 촉매 장치는 공기 정화 및 살균 성능을 극대화합니다.
+																</p>
+																<a href="{% url 'spy6' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101438_2438.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >G5 의료용 공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	G5는 플라즈마 정전기 흡착과 다중 공기 처리 기술을 결합하여 공기를 효과적으로 청소하고 소독합니다. 
+																</p>
+																<a href="{% url 'spg5' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101454_8029.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >Y3공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	손 제스처 제어로 교차 오염을 방지합니다. 자외선은 공기 중의 유해한 오염 물질을 파괴합니다. 별도의 필터 설계로 필터 교체 비용이 절감됩니다.
+																</p>
+																<a href="{% url 'spy3' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101509_6721.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >Y8 공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	침실을 위한 지능형 공기청정기로서 손동작 작동으로 교차 오염을 방지하고 자외선이 병원균을 사멸하여 공기 살균 능력을 극대화합니다.
+																</p>
+																<a href="{% url 'spy8' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101526_2058.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+									<div class="swiper-slide">
+										<div class="item-s">
+												<div class="container">
+													<div class="container-box">
+														<div class="txt">
+
+															<div class="txt-des">
+																<h2  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >BK90 공기청정기</h2>
+																<p  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	스마트 제어 시스템, 통합 플라즈마 공기 정화 및 살균 기술, 안전한 설치 방식을 갖춘 최고급 벽걸이형 공기청정기입니다.
+																</p>
+																<a href="{% url 'spbk90' %}" target="_blank" class="layui-btn buttonHover"  data-aos=zoom-in-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+																	<span>
+																		더 알아보기
+																	</span> <div class="btnHover"></div>
+																</a>
+															</div>
+
+														</div>
+													</div>
+												</div>
+
+
+											<div class="img1" >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20230427/20230427101544_0508.jpg" alt="" />
+
+											</div>
+
+
+										</div>
+
+
+									</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="index-banner-mobile">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="https://www.soto.cn/en/contact/#join" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018112225_6452.jpg" alt=" 대리점 신청 " /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112237_2883.png" alt=" 대리점 신청 " />
+												</div>
+																																</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spuv360' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018113117_4068.jpg" alt="UV360 Sterilizer" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018113147_1207.png" alt="UV360 Sterilizer" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018113150_6979.png" alt="UV360 Sterilizer" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spy9' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221031/20221031140242_9774.jpg" alt="Y9 Smart Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221023/20221023092607_3654.png" alt="Y9 Smart Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112513_2997.png" alt="Y9 Smart Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spy6' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018112817_7449.jpg" alt="Y6 Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221023/20221023093304_6000.png" alt="Y6 Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112830_5102.png" alt="Y6 Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spg5' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018112627_6874.jpg" alt="G5 Medical Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112634_6565.png" alt="G5 Medical Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112639_1226.png" alt="G5 Medical Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spy3' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018112726_3684.jpg" alt="Y3 Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221023/20221023093037_1334.png" alt="Y3 Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112737_4107.png" alt="Y3 Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spy8' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018112924_2030.jpg" alt="Y8 Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221023/20221023093320_6764.png" alt="Y8 Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018112938_3353.png" alt="Y8 Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="item">
+									<a href="{% url 'spbk90' %}" target="_blank">
+
+										<div>
+
+											<div ><img src="https://www.sotoairpurifier.com/attached/image/20221018/20221018113006_5957.jpg" alt="BK90 Air Purifier" /></div>
+												<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018113013_3134.png" alt="BK90 Air Purifier" />
+												</div>
+																							<div style="position:absolute;top:0;right:0;left:0;"  data-aos=fade-up data-aos-offset=120 data-aos-duration=500 data-aos-easing=ease data-aos-delay=0 data-aos-once=False >
+													<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20221018/20221018113021_9750.png" alt="BK90 Air Purifier" />
+												</div>
+																					</div>
+									</a>
+								</div>
+							</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+
+
+
+
+    
+		<div class="topclsinfo topclsinfo-index  hidden-xs">
+			<div class="container">
+				<div class="container-box"  data-aos=fade data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+					<div class="title">
+						<h2>우수한 공기 품질 솔루션</h2>
+
+					</div>
+
+					<div class="body"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+						
+						<p>SOTO는 최고 품질의 공기 정화 시스템을 설계하고 제조하기 위해 노력하고 있습니다. 혁신, 기능성 및 품질에 대한 우리의 노력으로 우리는 공기 청정기 업계에서 선도적인 위치를 차지하게 되었습니다. 우리의 초점은 안전성, 신뢰성, 단순성을 갖춘 제품을 제공하는 것입니다. 수년 동안 SOTO는 우수한 품질과 탁월한 고객 관리로 큰 명성을 유지해 왔습니다. 당사의 제품은 전 세계 의료 종사자들이 높은 평가를 받고 선호하는 제품입니다. 우리는 전 세계적으로 코로나19에 맞서 싸우는 솔루션의 일부가 된 것을 자랑스럽게 생각합니다. 이제 우리는 그 어느 때보다 세상을 더 깨끗하고 건강하며 안전하게 만들겠다는 사명에 최선을 다하고 있습니다. 실내공기질 개선과 코로나19 확산 방지를 위해 함께 노력합시다. 더 나은 공기 질은 더 나은 미래를 의미합니다.</p><p></p><p>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="topclsinfo topclsinfo-index visible-xs">
+			<div class="container">
+				<div class="container-box">
+					<div class="title"  data-aos=fade data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+						<h2>우수한 공기 품질 솔루션</h2>
+					</div>
+
+					<div class="body"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+						
+						<p>SOTO는 최고 품질의 공기 정화 시스템을 설계하고 제조하기 위해 노력하고 있습니다. 혁신, 기능성 및 품질에 대한 우리의 노력으로 우리는 공기 청정기 업계에서 선도적인 위치를 차지하게 되었습니다. 우리의 초점은 안전성, 신뢰성, 단순성을 갖춘 제품을 제공하는 것입니다. 수년 동안 SOTO는 우수한 품질과 탁월한 고객 관리로 큰 명성을 유지해 왔습니다. 당사의 제품은 전 세계 의료 종사자들이 높은 평가를 받고 선호하는 제품입니다. 우리는 전 세계적으로 코로나19에 맞서 싸우는 솔루션의 일부가 된 것을 자랑스럽게 생각합니다. 이제 우리는 그 어느 때보다 세상을 더 깨끗하고 건강하며 안전하게 만들겠다는 사명에 최선을 다하고 있습니다. 실내공기질 개선과 코로나19 확산 방지를 위해 함께 노력합시다. 더 나은 공기 질은 더 나은 미래를 의미합니다.</p><p></p><p>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="index-product-tj  hidden-xs">
+			<div class="container-full">
+				<div class="container">
+					<div class="container-box">
+						<div class="row">
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spg5' %}" target="_blank">
+											<div class="img"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232236_9407.jpg" alt="G5 Medical Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													G5 의료용 공기청정기
+												</div>
+												<div class="desc" >
+													G5는 정전기 흡착과 기계적 여과 기술을 이용해 미생물을 포획하고, UV 광촉매 시스템을 이용해 유해한 병원균을 사멸한다. 이 혁신적인 디자인은 공기 소독 효율을 크게 향상시킵니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spy6' %}" target="_blank">
+											<div class="img"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232257_6020.jpg" alt="Y6 Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													Y6 공기청정기
+												</div>
+												<div class="desc" >
+													Y6는 차세대 살균 기술이 적용된 지능형 공기청정기입니다. 비접촉식 손 제스처 제어로 사용자 간의 교차 오염을 방지합니다. UV-Photo 촉매 산화 기술을 순환여과 시스템 중앙에 구축하여 공기 정화 및 살균 성능을 극대화합니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spbk90' %}" target="_blank">
+											<div class="img"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232322_9396.jpg" alt="BK90 Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													BK90 공기청정기
+												</div>
+												<div class="desc" >
+													통합 정화 시스템은 다양한 공기 처리 기술을 결합하여 실내 공기를 효과적으로 정화하고 살균합니다. B1은 공기 중 병원체 및 오염 물질에 대한 포괄적인 보호 기능을 제공합니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="index-product-tj  visible-xs">
+			<div class="container-full">
+				<div class="container">
+					<div class="container-box">
+						<div class="row">
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spg5' %}" target="_blank">
+											<div class="img"  data-aos=zoom-in data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232236_9407.jpg" alt="G5 Medical Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													G5 의료용 공기청정기
+												</div>
+												<div class="desc" >
+													G5는 정전기 흡착과 기계적 여과 기술을 이용해 미생물을 포획하고, UV 광촉매 시스템을 이용해 유해한 병원균을 사멸한다. 이 혁신적인 디자인은 공기 소독 효율을 크게 향상시킵니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spy6' %}" target="_blank">
+											<div class="img"  data-aos=zoom-in data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232257_6020.jpg" alt="Y6 Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													Y6 공기청정기
+												</div>
+												<div class="desc" >
+													Y6는 차세대 살균 기술이 적용된 지능형 공기청정기입니다. 비접촉식 손 제스처 제어로 사용자 간의 교차 오염을 방지합니다. UV-Photo 촉매 산화 기술을 순환여과 시스템 중앙에 구축하여 공기 정화 및 살균 성능을 극대화합니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-4">
+									<div class="item">
+										<a href="{% url 'spbk90' %}" target="_blank">
+											<div class="img"  data-aos=zoom-in data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+												<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20220418/20220418232322_9396.jpg" alt="BK90 Air Purifier" />
+											</div>
+											<div class="txt">
+												<div class="tit" >
+													BK90 공기청정기
+												</div>
+												<div class="desc" >
+													통합 정화 시스템은 다양한 공기 처리 기술을 결합하여 실내 공기를 효과적으로 정화하고 살균합니다. B1은 공기 중 병원체 및 오염 물질에 대한 포괄적인 보호 기능을 제공합니다.
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="index-sq-box hidden-xs">
+			<div class="container">
+				<div class="container-box">
+					<div class="item">
+						<div class="img"  data-aos=zoom-in data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+							<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20210620/20210620150916_2882.jpg" alt="대리점 신청" />
+						</div>
+						<div class="txt">
+							<div class="title"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >대리점 신청</div>
+							<div class="desc"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+								최고를 추구하는 것이 SOTO의 핵심가치입니다. 회사의 빠른 성장은 새롭고 고품질의 제품을 만들기 위한 우리의 활발한 노력을 통해 이루어졌습니다. 우리 공기청정기는 효율성과 신뢰성 면에서 경쟁사 제품보다 우수합니다. 또한, 단순한 디자인 덕분에 공기청정기를 쉽게 작동하고 유지 관리할 수 있습니다. SOTO는 항상 고객의 요구를 최우선으로 생각하며 제품과 서비스를 더욱 개선하기 위해 고객의 피드백에 특별한 주의를 기울입니다. 우리의 창의성은 종종 고객으로부터 영감을 받으며 제품에 대한 높은 표준을 설정하려는 동기를 부여받습니다. SOTO는 우리 삶의 질을 향상시키고 인류의 건강에 도움이 되는 제품을 제공하는 자랑스러운 공기청정기 제조업체입니다. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">우리와 함께 건강한 공기를 만들어 갑시다. 의료인을 위한 이상적인 선택, SOTO 프리미엄 공기청정기!
+							</div>
+								<div class="more">
+									<a href="{% url 'contact' %}#join" class="layui-btn buttonHover"><span>신청하기</span><div class="btnHover"></div></a>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="index-sq-box visible-xs">
+			<div class="container">
+				<div class="container-box">
+					<div class="item">
+						<div class="img" >
+							<img src="https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20210428/20210428154623_7120.jpg" alt="대리점 신청" />
+						</div>
+						<div class="txt">
+							<div class="title"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >대리점 신청</div>
+							<div class="desc"  data-aos=fade-up data-aos-offset=120 data-aos-duration=1000 data-aos-easing=linear data-aos-delay=0 data-aos-once=False >
+	                            SOTO 공기청정기는 효율성과 신뢰성 면에서 경쟁사 제품보다 우수합니다. 우리는 항상 고객의 요구를 최우선으로 생각하며 제품과 서비스를 더욱 개선하기 위해 고객의 피드백에 특별한 주의를 기울입니다. 우리와 함께 건강한 공기를 만들어 갑시다. 
+							</div>
+								<div class="more">
+									<a href="/contact/#join" class="layui-btn buttonHover"><span>신청하기</span><div class="btnHover"></div></a>
+								</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		
+
+    
+
+    
+    
+
+
+{% endblock %}

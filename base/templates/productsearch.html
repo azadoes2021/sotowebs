@@ -1,0 +1,301 @@
+{% extends 'header.html' %}
+{% block content %}
+
+
+
+
+<div class="path-container">
+  <div class="container">
+    <div class="container-box">
+<div class="path">
+<ul>
+      <li><a href="{% url 'home' %}">홈</a></li>
+  <li><a href="{% url 'productsearch' %}">검색</a></li>
+  
+
+</ul>
+</div>
+<div class="page-banner-nav-swiper">
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+                              <div class="swiper-slide active swiper-slide-active" data-index="0">
+                  <a href="{% url 'productsearch' %}">
+                      검색
+                  </a>
+              </div>
+             
+      </div>
+
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<div class="page-pager">
+  <div> {{ error }} </div>
+  <br>
+      
+      
+
+
+      <div class="page-pager" style="margin-top: -40px;">
+        <nav class="pager">
+  <ul class="pagination">
+      <form id="searchForm" action="{% url 'productsearch' %}" method="get" class="layui-form"style="text-align:center; width: 24rem;s">      
+        <input type="text" class="layui-input" id="formInput#search" name="search_query" placeholder="검색어입력"
+        value="{{search_query}}">
+        <button type="submit" class="btn" style="margin: 15px 0 0px 0px;background-color: #efefef;">검색</button>
+        </form>
+  </ul>
+  </nav>
+    </div>
+
+      <!-- <div class="page-pager">
+        <nav class="pager">
+  <ul class="pagination">
+      <li class="disabled"><a href="javascript:;" aria-label="Previous"><span aria-hidden="true">&lt;</span></a></li>
+
+
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+      <li><a href="?page=1&amp;k=soto">2</a></li>
+      <li><a href="?page=2&amp;k=soto">3</a></li>
+    
+              <li class=""><a href="?page=1&amp;k=soto" aria-label="Next"><span aria-hidden="true">&gt;</span></a></li>
+
+  </ul>
+</nav>
+
+  </div> -->
+
+  
+
+
+  <div class="page-pager" style="margin-top: -40px;">
+      {% if posts.has_other_pages %}
+    <nav class="pager">
+      <br>
+    <ul class="pagination">
+      {% if posts.has_previous %}
+      <li><a href="?page={{posts.previous_page_number}}" class="page-link" data-page="{{posts.previous_page_number}}"><strong>&#10094; Prev</strong></a></li>
+      {% endif %}
+
+      {% for page in custom_range %}
+      <!-- ?page=2 이고 2를 나타냄 -->
+      {% if page == posts.number %} 
+
+      <li><a href="?page={{page}}" class="page-link" data-page="{{page}}"><strong>{{page}}</strong></a><li>
+      {% else %}
+
+      <li><a href="?page={{page}}" class="page-link" data-page="{{page}}">{{page}}</a></li>
+      {% endif %}
+      {% endfor %}
+
+
+      {% if posts.has_next %}
+      <li><a href="?page={{posts.next_page_number}}" class="page-link" data-page="{{posts.next_page_number}}"><strong>&#10095; Next</strong></a></li>
+      {% endif %}
+      </ul>
+
+    </nav>
+    {% endif %}
+</div>  
+
+  <div class="topclsinfo hidden-xs">
+<div class="container">
+  <div class="container-box">
+
+    <div class="title" >
+      <h2></h2>
+    </div>
+      <div class="body" >
+        <p></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="topclsinfo visible-xs">
+<div class="container">
+  <div class="container-box">
+
+    <div class="title" >
+      <h2></h2>
+    </div>
+      <div class="body" >
+        <p></p>
+      </div>
+  </div>
+</div>
+</div>
+<div class="list-product">
+<div class="container hidden-xs">
+  <div class="container-box">
+    <div class="row">
+
+        {% for pd in posts %}
+          {% if pd.status == 'yes' %}
+        <div class="col-xs-12 col-sm-3">
+          <div class="item">
+            <a href="{{ pd.plink}}">                
+              
+              <div class="img" data-aos="fade-up" data-aos-offset="120" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="0" data-aos-once="False">
+                {% if pd.image %}
+                  <img src="{{ pd.image.url}}" alt="" >
+                {% else %}
+                {% endif %}                  
+              </div>
+
+
+              <div class="txt">
+                <div class="tit" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="0" data-aos-once="False">
+                  {{ pd.pname}}
+                </div>
+                <div class="tit-sub" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="0" data-aos-once="False">
+                  {{ pd.body}}
+                </div>
+                <div class="desc" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="linear" data-aos-delay="0" data-aos-once="False">
+                  Smart control system, integrated electrostatic adsorption technology and mechanical filtration, combined air treatment technologies provide comprehensive protection against airborne pollutants.
+                </div>
+              </div>
+           
+
+            </a>
+          </div>
+        </div>
+          {% endif %}
+        {% endfor %}
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="list-product ">
+  <div class="container visible-xs">
+    <div class="container-box">
+      <div class="row">
+        {% for pd in posts %}
+          {% if pd.status == 'yes' %}
+          <div class="col-xs-12 col-sm-3">
+            <div class="item">
+              <a href="/products/wall-mounted/bk100/">
+                <div class="img">
+                  {% if pd.image %}
+                  <img src="{{ pd.image.url}}" alt="" >
+                  {% else %}
+                  {% endif %}    
+                </div>
+                <div class="txt">
+                  <div class="tit">
+                    {{ pd.pname}}
+                  </div>
+                  <div class="tit-sub">
+                    {{ pd.body}}
+                  </div>
+                  <div class="desc">
+                    Smart control system, integrated electrostatic adsorption technology and mechanical filtration, combined air treatment technologies provide comprehensive protection against airborne pollutants.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          {% endif %}
+        {% endfor %}
+          
+      </div>
+    </div>
+  </div>
+
+<div class="page-pager">
+  
+</div>
+</div>
+
+
+
+
+
+
+
+    
+    <br>
+    <br>
+    <br>
+    
+    
+  </div>
+
+
+  
+
+  <!-- https://www.youtube.com/watch?v=l1w1-c7NI-E | Python Django - Search + Pagination in Website 참고해서 만듬 -->
+  <!-- 동영상 강의에 나온 paginate.html과 posts.html 파일들 나누어서 정리하는 것과, main.js 생성하는 건 아직 안했음. -->
+  <!-- search_query 검색하고 page 클릭한 후, 글읽기로 들어갔다가 뒤로 나오면 기존 검색해 놓은 페이지로 가는 부분
+    <a class="btn" onclick="history.back()">Back</a> 로 보완완료 -->
+  <!-- 이전 페이지 를 기억할 수 있도록 한 것 -->
+<script type="text/javascript">
+	let searchForm = document.getElementById('searchForm')
+	let pageLinks = document.getElementsByClassName('page-link')
+
+	if(searchForm) {    
+      for(let i=0; pageLinks.length > i; i++){
+        pageLinks[i].addEventListener('click', function(e) {
+          e.preventDefault()
+
+          let page = this.dataset.page
+          console.log('PAGE', page)
+
+          searchForm.innerHTML += `<input value="${page}" name="page" hidden >`
+          searchForm.submit()
+        })
+    }
+  
+  }
+
+	
+</script>
+{% endblock content %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

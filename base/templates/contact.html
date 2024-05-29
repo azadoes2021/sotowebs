@@ -1,0 +1,586 @@
+{% extends 'header.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+	#id_terms_confirmed {
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none; */
+    display: block;
+    /* float: left; */
+    margin-right: -2em;
+    /* opacity: 0; */
+    width: 1em;
+		position: sticky;
+    z-index: -1;
+}
+/* @media screen and (max-width: 2560px) {
+#pi {
+	margin: -18px 105px 0px 0px;
+
+}
+}
+@media screen and (max-width: 1920px) {
+#pi {
+	margin: -13px 1245px 0px 0px;
+
+}
+}
+@media screen and (max-width: 1440px) {
+#pi {
+	margin: -14px 881px 0px 0px;
+
+}
+}
+@media screen and (max-width: 768px) {
+	#pi {
+	margin: -15px 545px 0px 0px;
+	}
+}
+
+
+@media screen and (max-width: 430px) {
+	#pi {
+	margin: -18px 150px 0px 0px;
+	}
+}
+@media screen and (max-width: 375px) {
+	#pi {
+	margin: -18px 113px 0px 0px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#pi {
+	margin: -18px 100px 0px 0px;
+	}
+} */
+</style>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGNZ3M7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+    			<div class="path-container">
+				<div class="container">
+					<div class="container-box">
+<div class="path">
+    <ul>
+            <li><a href="{% url 'home' %}">홈</a></li>
+        <li><a href="{% url 'contact' %}">문의하기</a></li>
+        
+
+    </ul>
+    </div>
+    <div class="page-banner-nav-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active active">
+                        <a href="{% url 'contact' %}">문의하기</a>
+                    </div>
+                            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+    		<div class="topclsinfo hidden-xs">
+			<div class="container">
+				<div class="container-box">
+
+					<div class="title" >
+						<h2>문의하기</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="topclsinfo visible-xs">
+			<div class="container">
+				<div class="container-box">
+
+					<div class="title" >
+						<h2>문의하기</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact-box hidden-xs">
+			<div class="container">
+				<div class="container-box">
+
+					<ul>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/1.png" alt="公司名称" /></div>
+							<div class="txt">
+								<h3>회사명 </h3>
+								<p>
+									SOTO Air Purification Technology (Langfang) Co., Ltd.
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/2.png" alt="公司地址" /></div>
+							<div class="txt">
+								<h3>공장 주소</h3>
+								<p>
+									Certification Industrial Park, Dachang High and New Technology Development Zone, Langfang City, Hebei Province, China
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/3.png" alt="服务热线" /></div>
+							<div class="txt">
+								<h3>서비스센터</h3>
+								<p><a href="tel:0086-400-626-8883">0086-400-626-8883</a></p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/4.png" alt="电子邮箱" /></div>
+							<div class="txt">
+								<h3>이메일</h3>
+								<p>
+									<a href="mailto:customerservice@soto.com.cn">customerservice@soto.com.cn</a>
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/5.png" alt="产品销售" /></div>
+							<div class="txt">
+								<h3>Sales Phone / WhatsApp</h3>
+								<p>
+												<a href="tel:138 1141 1994 ">138 1141 1994 </a>
+												<a href="tel: 138 0109 7783"> 138 0109 7783</a>
+
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/6.png" alt="售后服务" /></div>
+							<div class="txt">
+								<h3>AS센터</h3>
+								<p><a href="tel:137 1782 1300 / 138 0109 7783">137 1782 1300 / 138 0109 7783</a></p>
+							</div>
+						</li>
+					</ul>
+					<div class="wx">
+						<div class="div">
+							
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div class="contact-box visible-xs">
+			<div class="container">
+				<div class="container-box">
+
+					<ul>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/1.png" alt="公司名称" /></div>
+							<div class="txt">
+								<h3>회사명 </h3>
+								<p>
+									SOTO Air Purification Technology (Langfang) Co., Ltd.
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com//Content/Images/contact/2.png" alt="公司地址" /></div>
+							<div class="txt">
+								<h3>공장 주소</h3>
+								<p>
+									Certification Industrial Park, Dachang High and New Technology Development Zone, Langfang City, Hebei Province, China
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com/Content/Images/contact/3.png" alt="服务热线" /></div>
+							<div class="txt">
+								<h3>서비스센터</h3>
+								<p><a href="tel:0086-400-626-8883">0086-400-626-8883</a></p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com/Content/Images/contact/4.png" alt="电子邮箱" /></div>
+							<div class="txt">
+								<h3>이메일</h3>
+								<p>
+									<a href="mailto:customerservice@soto.com.cn">customerservice@soto.com.cn</a>
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com/Content/Images/contact/5.png" alt="产品销售" /></div>
+							<div class="txt">
+								<h3>Sales Phone / Wechat</h3>
+								<p>
+												<a href="tel:138 1141 1994 ">138 1141 1994 </a>
+												<a href="tel: 138 0109 7783"> 138 0109 7783</a>
+
+								</p>
+							</div>
+						</li>
+						<li >
+							<div class="img"><img src="https://www.sotoairpurifier.com/Content/Images/contact/6.png" alt="售后服务" /></div>
+							<div class="txt">
+								<h3>AS 센터</h3>
+								<p><a href="tel:137 1782 1300 / 138 0109 7783">137 1782 1300 / 138 0109 7783</a></p>
+							</div>
+						</li>
+					</ul>
+					<div class="wx">
+						<div class="div">
+							<div class="img" >
+								<img src="" alt="SOTO Air Purification Technology (Langfang) Co., Ltd." />
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="join"></div>
+		<div class="sq-box">
+			<div class="topclsinfo hidden-xs">
+				<div class="container">
+					<div class="container-box">
+						<div class="title">
+							<h2 >대리점 신청</h2>
+						</div>
+						<div class="body" >
+							<p>SOTO는 중국의 전문 공기 청정기 제조업체로 최고 수준의 공기 정화 및 소독 시스템 개발에 전념하고 있습니다. 최고를 추구하는 것이 SOTO의 핵심가치입니다. 당사의 공기청정기는 효율성과 신뢰성 면에서 기존 제품보다 우수합니다. 또한, 단순한 디자인 덕분에 공기청정기를 쉽게 작동하고 유지 관리할 수 있습니다. 우리의 창의성은 종종 고객으로부터 영감을 받으며 제품에 대한 높은 표준을 설정하려는 동기를 부여받습니다. 우리와 함께 건강한 공기를 만들어 가세요.</p><p>의료인의 이상적인 선택, SOTO 프리미엄 공기청정기!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="topclsinfo visible-xs">
+				<div class="container">
+					<div class="container-box">
+						<div class="title">
+							<h2 >대리점 신청</h2>
+						</div>
+						<div class="body" >
+							<p>SOTO는 중국의 전문 공기 청정기 제조업체로 최고 수준의 공기 정화 및 소독 시스템 개발에 전념하고 있습니다. 최고를 추구하는 것이 SOTO의 핵심가치입니다. 당사의 공기청정기는 효율성과 신뢰성 면에서 기존 제품보다 우수합니다. 또한, 단순한 디자인 덕분에 공기청정기를 쉽게 작동하고 유지 관리할 수 있습니다. 우리의 창의성은 종종 고객으로부터 영감을 받으며 제품에 대한 높은 표준을 설정하려는 동기를 부여받습니다. 우리와 함께 건강한 공기를 만들어 가세요.</p><p>의료인의 이상적인 선택, SOTO 프리미엄 공기청정기!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="container-box">
+
+					{% load widget_tweaks %}
+					<form action="#" method="post" class="layui-form">
+						{% csrf_token %}
+							{% if form.errors %}
+									<div class="upsideerrorstyling" style="text-align: center;">
+									<strong style="color: blue;"> 
+										<p>문의 접수가 완료되지 않았습니다.</p>
+										<p>***필수사항을 모두 입력하세요***</p>
+										<p> 성함/상호, 전화번호, 문의내용을</p>
+										<p> 다시 한번 체크해주세요!!</p>
+									</strong>
+									</div>
+									<br class="">
+									<br class="">
+									
+									
+							
+							{% endif %}
+							<div class="layui-form">
+							{% for field in form %}           
+								{% if field.name == 'name' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+										성함/상호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" />
+								</div>
+								{% elif field.name == 'number' %}									
+								<div class="item">
+									<label>
+										<span>*</span>
+										전화번호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="전화번호 (필수*)" type="text" />
+								</div>
+								{% elif field.name == 'category' %}									
+										
+								{% elif field.name == 'promoperson' %}									              				
+															
+								{% elif field.name == 'subject' %}
+								
+								{% elif field.name == 'dbcode' %}
+								
+								{% elif field.name == 'body' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+										문의내용
+									</label>
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용 (필수*)" class="layui-textarea"></textarea>
+								</div>
+							</div>
+							{% elif field.name == 'terms_confirmed' %}
+							
+								
+								
+							<!-- <div class="col-6 col-12-mobile">
+								<input type="checkbox" id="copy" name="copy">
+								<label for="copy">Email me a copy of this message</label>
+							</div> -->
+						<!-- </div> -->
+							
+						<!-- 주석필요시 풀것 -->
+						<!-- <input type="checkbox" id="{{ field.id_for_label }}" name="{{ field.name }}" style="z-index: 0;"><span>(체크필요)</span> -->
+							
+						<!-- <div class="item"> -->
+								
+							<!-- 주석필요시 풀것 -->
+								<!-- <span id="pi">개인정보 수집동의 (필수*) <a href="/policy" target="_blank" ><span style="text-decoration: underline;">상세</span></a></span> -->
+								
+							<!-- </div> -->
+							</div>
+							
+							
+						{% endif %}
+			
+					<!-- <br> -->
+					
+			
+			
+			
+					{% endfor %}
+					
+				
+				
+								<div class="item" style="text-align: center;">
+									
+										<input type="submit" value="상담신청" class="layui-btn buttonHover"  />
+									
+								</div>
+							</div>
+						</form>
+
+
+					<!-- <div class="layui-form">
+						<div class="item">
+							<label>
+								<span>*</span>
+								성함/상호
+							</label>
+							<input type="text" name="nsemail" class="layui-input" placeholder="성함/상호를 입력해주세요." lay-verType="tips" lay-verify="requireds|emails" value="" />
+						</div>
+						<div class="item">
+							<label>
+								<span>*</span>
+								전화번호
+							</label>
+							<input type="text" name="nsemail" class="layui-input" placeholder="전화번호를 입력해 주세요." lay-verType="tips" lay-verify="requireds|emails" value="" />
+						</div>
+						<div class="item">
+							<label>
+								<span>*</span>
+								문의내용
+							</label>
+							<textarea name="nscontent" placeholder="문의내용을 입력해 주세요." class="layui-textarea" lay-verType="tips" lay-verify="requireds"></textarea>
+
+						</div>
+
+						<div class="item">
+							<a href="javascript:;" lay-submit lay-filter="formShichang" class="layui-btn buttonHover"><span>보내기</span><div class="btnHover"></div></a>
+
+						</div>
+
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+
+
+
+    
+    
+    
+    
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript">
+        var someImages = document.querySelectorAll('img');
+        objectFitImages(someImages);
+        //AOS.init({
+        //	easing: 'ease-out-back',
+        //	duration: 1000
+        //});
+        AOS.init();
+        document.onreadystatechange = function () {
+            if (document.readyState === 'complete') {
+                AOS.init();
+            }
+        }
+
+        //2022 视频16：9
+        $(function () {
+
+            //微信
+            var wxOption = {
+                title: 'SOTO赛多空气消毒机官网',
+                link: location.href,
+                imgUrl: 'https://www.sotoairpurifier.com/content/img/fx.jpg',
+                desc: '高端消毒机 专业选赛多 https://www.soto.cn'
+            }
+            var appId = "wx7f9548d8827a59e6";
+            $.ajax({
+                url: 'https://api.soto.cn/api/wx/jsapisignatureasync',
+                data: { appId: appId, url: wxOption.link },
+                dataType: 'json',
+                type: 'get',
+                success: function (res) {
+                    if (res.statusCode == 200) {
+                        var data = res.data;
+                        wx.config({
+                            debug: false, //
+                            appId: appId, // 必填，公众号的唯一标识
+                            timestamp: Number(data.timestamp), // 必填，生成签名的时间戳
+                            nonceStr: data.noncestr, // 必填，生成签名的随机串
+                            signature: data.signature,// 必填，签名
+                            jsApiList: ['updateAppMessageShareData',
+                                'updateTimelineShareData',
+                                'onMenuShareTimeline',
+                                'onMenuShareAppMessage',
+                                'onMenuShareQQ',
+                                'onMenuShareWeibo',
+                                'onMenuShareQZone',] // 必填，需要使用的JS接口列表
+                        });
+                        wx.ready(function () {
+                            wx.onMenuShareTimeline({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                success: function () {
+                                    // 用户点击了分享后执行的回调函数
+                                },
+                            });
+                            wx.updateAppMessageShareData({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                desc: wxOption.desc, // 分享描述
+                                success: function () {
+                                    // 设置成功
+                                },
+                            });
+                            wx.updateTimelineShareData({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                success: function () {
+                                    // 设置成功
+                                },
+                            });
+
+                        });
+                        wx.error(function (ress) {
+                            console.log(ress)
+                        });
+                    }
+                    else {
+                        console.log(res)
+                    }
+                }
+
+            });
+
+            $(window).resize(function () {
+                var videoH = $('.video-js').width() / 16 * 9;
+                var winW = $(window).width();
+                if (location.href.includes('brand/company')) {
+                    //未知，只适用企业简介视频
+                    if (winW < 768) {
+                        videoH = winW / 16 * 9 - 16;
+                    }
+                }
+                $('.video-js').css({ height: videoH + 'px' })
+            });
+            var videoH = $('.video-js').outerWidth() / 16 * 9;
+            var winW = $(window).width();
+            if (location.href.includes('brand/company')) {
+                //未知，只适用企业简介视频
+                if (winW < 768) {
+                    videoH = winW / 16 * 9 - 16;
+                }
+            }
+
+            $('.video-js').css({ height: videoH + 'px' })
+            console.log($('.video-js').outerWidth(), '$(.video - js).width()')
+            console.log(videoH, 'videoH')
+
+            console.log($(window).width(), 'windows width')
+        })
+    </script>
+
+    <div class="footer-icon">
+        <ul>
+            <li>
+                <div class="item" id="fot1">
+                    <div class="img">
+                        <img src="https://www.sotoairpurifier.com/Content/Images/icon/2023/email.png" />
+                    </div>
+                    <div class="hover" style="width:290px;left:-290px;">
+                        <div class="closess">
+                            <i class="layui-icon layui-icon-close"></i>
+                        </div>
+                        <p>sotosales1@outlook.com</p>
+                        <a href="mailto:sotosales1@outlook.com">sotosales1@outlook.com</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item" id="fot2">
+                    <div class="img">
+                        <img src="https://www.sotoairpurifier.com/Content/Images/icon/2023/whatsapp.png" />
+                    </div>
+                    <div class="hover">
+                        <div class="closess">
+                            <i class="layui-icon layui-icon-close"></i>
+                        </div>
+                        <p>13811411994</p>
+                        <a href="tel:13811411994">13811411994</a>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <a href="/contact/">
+                    <img src="https://www.sotoairpurifier.com/Content/Images/fot-3.png" />
+                    <p>
+                        Contact <br />Us
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
+{% endblock %}
