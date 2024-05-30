@@ -18,7 +18,7 @@ class Product(models.Model):
     pname = models.CharField(max_length=100, verbose_name='제품명')    
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, verbose_name='글쓴이')          
     # image = models.ImageField(null=True, blank=True, upload_to="static/images", default="static/images/defaultimg.jpg", verbose_name='이미지업로드')
-    imglink = models.CharField(max_length=100, verbose_name='이미지링크', default='https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20210607/20210607135313_9390.jpg')    
+    imglink = models.CharField(max_length=200, verbose_name='이미지링크', default='https://sotoairpurifier-oss.oss-cn-beijing.aliyuncs.com/attached/image/20210607/20210607135313_9390.jpg')    
     # learn django - the easyway [youtube]
     # author = models.ForeignKey(User, related_name='blog_posts')
     body = models.TextField(null=True,verbose_name='내용')
