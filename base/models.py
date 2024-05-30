@@ -17,7 +17,7 @@ class Product(models.Model):
 
     pname = models.CharField(max_length=100, verbose_name='제품명')    
     author = models.ForeignKey(User, on_delete=models.CASCADE, null=True, verbose_name='글쓴이')          
-    image = models.ImageField(null=True, blank=True, upload_to="staticfiles/images/", default="staticfiles/images/defaultimg.jpg", verbose_name='이미지업로드')
+    image = models.ImageField(null=True, blank=True, upload_to="static/images", default="static/images/defaultimg.jpg", verbose_name='이미지업로드')
     # learn django - the easyway [youtube]
     # author = models.ForeignKey(User, related_name='blog_posts')
     body = models.TextField(null=True,verbose_name='내용')
