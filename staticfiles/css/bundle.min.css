@@ -13463,7 +13463,9 @@ a cite {
 }
 
 .layui-form input[type=checkbox],.layui-form input[type=radio],.layui-form select {
-  display: none
+  /* display: none */
+  /* custom */
+  display: block;
 }
 
 .layui-form [lay-ignore] {
