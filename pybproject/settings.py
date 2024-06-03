@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_pi80w)!aam59b77q*eneu*shikc^7u1tasr9w6b%6b(wawc2p
 DEBUG = False
 # DEBUG = True 
 
-ALLOWED_HOSTS =['3.36.9.42']
+ALLOWED_HOSTS =['3.36.9.42', 'sotoplus.co.kr']
 
 
 # Application definition
