@@ -4115,7 +4115,10 @@ footer .copy .txt {
 
 @media (min-width: 1900px) {
   .article-product .article-product-box1 .txt h1 {
-      font-size:4.8rem
+      
+    /* font-size:4.8rem */
+    /* custom */
+    font-size:4.3rem
   }
 }
 
