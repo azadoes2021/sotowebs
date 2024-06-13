@@ -197,9 +197,12 @@ def success(request):
         ['bluewate02@naver.com'],
 
     )
-    return redirect("successre")
+    return redirect("successree")
 
-def successre(request): 
+def successori(request): 
+    return render(request, 'successori.html', {})    
+
+def successree(request): 
     return render(request, 'successre.html', {})    
 
 def policy(request):
