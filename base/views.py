@@ -197,7 +197,11 @@ def success(request):
         ['bluewate02@naver.com'],
 
     )
+    return redirect("core:index")
     return render(request, 'success.html', {})    
+def successre(request): 
+    return render(request, 'successre.html', {})    
+
 def policy(request):
     return render(request, 'policy.html', {})  
 def error_500(request):
