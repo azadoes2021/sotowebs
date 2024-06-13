@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
 from .forms import AskForm
 from django.core.mail import send_mail
@@ -197,8 +197,8 @@ def success(request):
         ['bluewate02@naver.com'],
 
     )
-    return redirect("core:index")
-    return render(request, 'success.html', {})    
+    return redirect("successre")
+
 def successre(request): 
     return render(request, 'successre.html', {})    
 
