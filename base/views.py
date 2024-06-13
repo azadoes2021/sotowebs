@@ -64,7 +64,7 @@ class ContactView(FormView):
     template_name = 'contact.html'
     form_class = AskForm
 
-    success_url = 'success'    
+    success_url = 'successori'    
     # fields = ['name', 'number', 'subject', 'body', 'terms_confirmed']
     # success_url = 'success'    
     
