@@ -65,7 +65,8 @@ urlpatterns = [
     path('spkj2',views.spkj2 , name="spkj2"),
     
     path('success',views.success , name="success"),
-    path('successre',views.successre , name="successre"),
+    path('successori',views.successori , name="successori"),
+    path('successree',views.successree , name="successree"),
     path('policy',views.policy , name="policy"),
 
     
