@@ -56,13 +56,18 @@ class AskForm(forms.Form):
     )
      
 
-    terms_confirmed = forms.BooleanField(
-        # error_messages={
-        #     'required': '동의여부를 체크해주세요.'
-        # },        
-        # label='개인정보 수집 및 이용 동의',
-        required=False, label='개인정보 수집 및 이용 동의',
-    )    
+    # terms_confirmed = forms.BooleanField(
+    #     error_messages={
+    #         'required': '동의여부를 체크해주세요.'
+    #     },        
+    #     label='개인정보 수집 및 이용 동의',
+        
+    # )    
+
+    # terms_confirmed = forms.BooleanField(
+        
+    #     required=False, label='개인정보 수집 및 이용 동의',
+    # )    
     
     
 
@@ -80,7 +85,7 @@ class AskForm(forms.Form):
         body = cleaned_data.get('body')
         
         
-        terms_confirmed = cleaned_data.get('terms_confirmed')  
+        # terms_confirmed = cleaned_data.get('terms_confirmed')  
         
         # dbcode = cleaned_data.get('dbcode')
 
@@ -97,7 +102,7 @@ class AskForm(forms.Form):
                 # subject = subject,
                 # subject02 = subject02,
                 body = body,
-                terms_confirmed = terms_confirmed,
+                # terms_confirmed = terms_confirmed,
                 # dbcode = dbcode,
                 # dbname = dbname,
                 # dbnamekr = dbnamekr,
