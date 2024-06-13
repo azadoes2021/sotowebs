@@ -203,7 +203,7 @@ def successori(request):
     return render(request, 'successori.html', {})    
 
 def successree(request): 
-    return render(request, 'successre.html', {})    
+    return render(request, 'successree.html', {})    
 
 def policy(request):
     return render(request, 'policy.html', {})  
