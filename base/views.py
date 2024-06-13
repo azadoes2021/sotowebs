@@ -189,7 +189,10 @@ def spkj1(request):
 def spkj2(request):
     return render(request, 'spkj2.html', {})
 
-def success(request):
+def success(request):    
+    return render(request, 'success.html', {})    
+    
+def successori(request): 
     send_mail(
         '[SOTOPLUS] 문의 접수가 들어왔습니다.',
         '문의 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
@@ -198,9 +201,6 @@ def success(request):
 
     )
     return redirect("successree")
-
-def successori(request): 
-    return render(request, 'successori.html', {})    
 
 def successree(request): 
     return render(request, 'successree.html', {})    
