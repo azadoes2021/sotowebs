@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic.edit import FormView
 from .forms import AskForm
-
+from django.core.mail import send_mail
 from .utils import searchposts, paginatePosts
 from .models import Product
 # Create your views here.
@@ -190,6 +190,13 @@ def spkj2(request):
     return render(request, 'spkj2.html', {})
 
 def success(request):
+    send_mail(
+        '문의 접수가 들어왔습니다.',
+        'sotoplus@website.com'
+        '문의 접수가 들어왔습니다. https://sotoplus.co.kr/admin/',
+        ['bluewate02@naver.com'],
+
+    )
     return render(request, 'success.html', {})    
 def policy(request):
     return render(request, 'policy.html', {})  
