@@ -192,8 +192,8 @@ def spkj2(request):
 def success(request):
     send_mail(
         '문의 접수가 들어왔습니다.',
-        'sotoplus@website.com',
         '문의 접수가 들어왔습니다. https://sotoplus.co.kr/admin/',
+        'sotoplus@website.com',
         ['bluewate02@naver.com'],
 
     )
