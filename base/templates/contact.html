@@ -327,7 +327,7 @@
 										<span>*</span>
 										성함/상호
 									</label>
-									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" />
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" style="font-size: 15px;" />
 								</div>
 								{% elif field.name == 'number' %}									
 								<div class="item">
@@ -335,7 +335,7 @@
 										<span>*</span>
 										전화번호
 									</label>
-									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="전화번호 (필수*)" type="text" />
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="전화번호 (필수*)" type="text" style="font-size: 15px;" />
 								</div>
 								{% elif field.name == 'category' %}									
 										
@@ -351,7 +351,7 @@
 										<span>*</span>
 										문의내용
 									</label>
-									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용 (필수*)" class="layui-textarea"></textarea>
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용 (필수*)" class="layui-textarea"></textarea style="font-size: 15px;">
 								</div>
 							</div>
 							{% elif field.name == 'terms_confirmed' %}
