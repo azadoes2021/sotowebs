@@ -7331,7 +7331,8 @@ footer .copy .txt {
 }
 
 .footer-icon ul li>a:hover {
-  background: rgba(194,26,31,0.8)
+  /* custom */
+  /* background: rgba(194,26,31,0.8) */
 }
 
 .footer-icon ul li>a img {
