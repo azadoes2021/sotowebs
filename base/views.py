@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views.generic.edit import FormView
-from .forms import AskForm
+from .forms import AskForm, CollectingdbForm
 from django.core.mail import send_mail
 from .utils import searchposts, paginatePosts
 from .models import Product
@@ -82,7 +82,7 @@ class ContactView(FormView):
 class CollectdbView(FormView):
     # model = Post     
     template_name = 'collectingdb.html'
-    form_class = AskForm
+    form_class = CollectingdbForm
 
     success_url = 'collectingdb'    
     # fields = ['name', 'number', 'subject', 'body', 'terms_confirmed']
