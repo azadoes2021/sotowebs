@@ -46,6 +46,7 @@ class CollectingdbAdmin(admin.ModelAdmin):
         return super().changelist_view(request, extra_context)
 
 admin.site.register(Post, PostAdmin)
+admin.site.register(Collectingdb, CollectingdbAdmin)
 admin.site.site_header = '관리자 페이지'
 
 admin.site.index_title = '관리자 페이지'
