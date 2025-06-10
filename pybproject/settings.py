@@ -48,7 +48,7 @@ SECRET_KEY = get_secret("SECRET_KEY")
 DEBUG = True 
 
 ALLOWED_HOSTS =['3.36.9.42', 'sotoplus.co.kr']
-
+# ALLOWED_HOSTS =['3.36.9.42', 'sotoplus.co.kr','127.0.0.1']
 
 # Application definition
 
