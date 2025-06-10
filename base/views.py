@@ -77,6 +77,26 @@ class ContactView(FormView):
         
         return context
     
+
+
+class CollectdbView(FormView):
+    # model = Post     
+    template_name = 'collectingdb.html'
+    form_class = AskForm
+
+    success_url = 'collectingdb'    
+    # fields = ['name', 'number', 'subject', 'body', 'terms_confirmed']
+    # success_url = 'success'    
+    
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)       
+        # .objects.all() 로 진행하니 잘 작동되었음.
+        # context ['blog'] = Blog.objects.get(pk=self.kwargs['pk']) => createview에는 pk가 들어가면 에러남.
+        # context ['blog'] = Blog.objects.all()
+        
+        return context
+
 class ProductssearchView(FormView):
     # model = Post     
     template_name = 'productssearch.html'
