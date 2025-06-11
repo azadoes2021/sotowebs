@@ -148,7 +148,7 @@ class Collectingdb(models.Model):
     # dbcode = models.CharField(max_length=20, default='db01', verbose_name='디비코드')# input = hidden : dbcode db01 - 문의하기db  db02 -  랜딩페이지 db  db03 - 추가 홍보페이지
     # dbname = models.CharField(max_length=20, default='', verbose_name='dbname')
     # dbnamekr = models.CharField(max_length=20, default='', verbose_name='DB종류')
-    address001 = models.CharField(max_length=10, choices=ADDRESS001_CHOICES, default='', verbose_name='주소1')
+    address001 = models.CharField(max_length=10, choices=ADDRESS001_CHOICES, null=True, verbose_name='주소1')
     address002 = models.CharField(max_length=50 ,null=True, verbose_name='주소2')        
     promoperson = models.CharField(max_length=50 ,null=True, verbose_name='추천인')        
     # object~~ 대신에 제목, 작성자 title name 로 나오도록

@@ -58,10 +58,10 @@
 	}
 } */
 @media screen and (max-width: 1920px) {
-/* .container {
-        width: 800px;
-        padding: 0;
-    } */
+#applybtn
+ {        width: 220px;
+        margin-bottom: 13px;
+    }
 		     .topclsinfo .title h2 {
         text-align: center;
         font-size: 3rem;
@@ -101,6 +101,10 @@ select {
     }
 }
 @media screen and (max-width: 1440px) {
+	#applybtn {
+        margin-top: 12px;
+        width: 310px;
+    }
     .layui-input, .layui-textarea {
         display: block;
         width: 62.5%;
@@ -124,6 +128,10 @@ select {
     }
 }
 @media screen and (max-width: 958px) {
+	#applybtn {
+        margin-top: 12px;
+        width: 240px;
+    }
 	.layui-input, .layui-textarea {
         display: block;
         width: 100%;
@@ -178,10 +186,10 @@ select {
     }
 }
 @media screen and (max-width: 500px) {
-	/* .container {
-        width: 500px;
-        padding: 0;
-    } */
+	#applybtn {
+        margin-top: 12px;
+        width: 240px;
+    }
 	.sq-box {
     background: #F7F7F7;
     padding: 50px 0;
@@ -192,6 +200,7 @@ select {
     display: block;
     width: 59.5%;
     padding-left: 10px;
+		height: 46px;
 }
 
 #landingpic{
@@ -211,7 +220,7 @@ select {
 			text-align: center;
 		}
 		select {
-				height: 10px;
+				height: 46px;
         width: 150px;
         /* padding: 1rem 1.2rem; */
         font-size: 1rem;
@@ -267,7 +276,7 @@ select {
 
 
     		<div class="topclsinfo">
-			<div class="container">
+			<!-- <div class="container">
 				<div class="container-box">
 
 					<div class="title" >
@@ -275,7 +284,7 @@ select {
 						</h2>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		
 		<!-- <h2 id="moapply">검사서비스신청
@@ -353,17 +362,17 @@ select {
 										<div class="item">
 									<label>
 										<span>*</span>
-										상세주소
+										주소: 시/군/구
 									</label>
-									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" style="font-size: 15px;" />
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="시/군/구 (필수*)" type="text" style="font-size: 15px;" />
 								</div>
 								{% elif field.name == 'promoperson' %}									              				
 								<div class="item">
 									<label>
-										<span>*</span>
+										<span></span>
 										추천인
 									</label>
-									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" style="font-size: 15px;" />
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호" type="text" style="font-size: 15px;" />
 								</div>
 								{% elif field.name == 'subject' %}
 								
@@ -372,10 +381,10 @@ select {
 								{% elif field.name == 'body' %}
 								<div class="item">
 									<label>
-										<span>*</span>
+										<span></span>
 										문의내용
 									</label>
-									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용 (필수*)" class="layui-textarea" style="font-size: 15px;"></textarea >
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용" class="layui-textarea" style="font-size: 15px;"></textarea >
 								</div>
 							</div>
 							{% elif field.name == 'terms_confirmed' %}
