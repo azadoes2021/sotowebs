@@ -87,6 +87,18 @@
 .layui-form {
 	padding: 20px;
 }
+select {
+				height: 37px;
+        width: 150px;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
 }
 @media screen and (max-width: 1440px) {
     .layui-input, .layui-textarea {
@@ -98,6 +110,18 @@
         text-align: center;
         margin-right: 37%;
     }
+		select {
+        height: 38px;
+        width: 150px;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
 }
 @media screen and (max-width: 958px) {
 	.layui-input, .layui-textarea {
@@ -108,6 +132,18 @@
 		#applywrapper {
         text-align: center;
         margin-right: 0%;
+    }
+		select {
+        height: 38px;
+        width: 150px;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
     }
 }
 @media screen and (max-width: 768px) {	
@@ -128,6 +164,18 @@
 			display: none;
 			text-align: center;
 		}
+		select {
+        height: 38px;
+        width: 150px;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
 }
 @media screen and (max-width: 500px) {
 	/* .container {
@@ -162,6 +210,18 @@
 			display: block;
 			text-align: center;
 		}
+		select {
+				height: 10px;
+        width: 150px;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
 }
 
 </style>
@@ -269,11 +329,23 @@
 									주소
 									</label>
 									<select name="{{ field.name }}" class="box" id="{{ field.id_for_label }}">
-                      <option value="">- 장부유형 -</option>
+                      <option value="">- 지역선택 -</option>
                       <option value="서울특별시">서울특별시</option>              
-                      <option value="복식장부대상자">복식장부 대상자</option>
-                      <option value="간편장부대상자">간편장부 대상자</option>              
-                      <option value="모름/기타">모름/기타</option>              
+                      <option value="부산광역시">부산광역시</option>
+                      <option value="인천광역시">인천광역시</option>
+                      <option value="대구광역시">대구광역시</option>
+											<option value="광주광역시">광주광역시</option>
+											<option value="대전광역시">대전광역시</option>
+											<option value="세종특별자치시">세종특별자치시</option>
+											<option value="경기도">경기도</option>
+											<option value="강원도">강원도</option>
+											<option value="충청북도">충청북도</option>
+											<option value="충청남도">충청남도</option>
+											<option value="경상북도">경상북도</option>
+											<option value="경상남도">경상남도</option>
+											<option value="전라북도">전라북도</option>
+											<option value="전라남도">전라남도</option>
+											<option value="제주특별자치도">제주특별자치도</option>
                     </select> 
 								</div>									
 								
