@@ -1,0 +1,656 @@
+{% extends 'header04.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+	#id_terms_confirmed {
+    /* -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none; */
+    display: block;
+    /* float: left; */
+    margin-right: -2em;
+    /* opacity: 0; */
+    width: 1em;
+		position: sticky;
+    z-index: -1;
+}
+/* @media screen and (max-width: 2560px) {
+#pi {
+	margin: -18px 105px 0px 0px;
+
+}
+}
+@media screen and (max-width: 1920px) {
+#pi {
+	margin: -13px 1245px 0px 0px;
+
+}
+}
+@media screen and (max-width: 1440px) {
+#pi {
+	margin: -14px 881px 0px 0px;
+
+}
+}
+@media screen and (max-width: 768px) {
+	#pi {
+	margin: -15px 545px 0px 0px;
+	}
+}
+
+
+@media screen and (max-width: 430px) {
+	#pi {
+	margin: -18px 150px 0px 0px;
+	}
+}
+@media screen and (max-width: 375px) {
+	#pi {
+	margin: -18px 113px 0px 0px;
+	}
+}
+@media screen and (max-width: 360px) {
+	#pi {
+	margin: -18px 100px 0px 0px;
+	}
+} */
+@media screen and (max-width: 1920px) {
+    html {
+        overflow-x: hidden;
+    }
+#applybtn
+ {        width: 220px;
+        margin-bottom: 13px;
+    }
+		     .topclsinfo .title h2 {
+        text-align: center;
+        font-size: 3rem;
+    }
+	.sq-box {
+    background: #F7F7F7;
+    padding: 0px 0;
+    width: 800px;
+    margin: auto;
+}
+.layui-input, .layui-textarea {
+    display: block;
+    width: 53.5%;
+    padding-left: 10px;
+}
+#applywrapper {
+	text-align: center;
+	margin-right: 46%
+}
+#landingpic{
+	width: 100%;	
+}
+.layui-form {
+	padding: 20px;
+}
+select {
+				height: 37px;
+        width: 53.5%;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
+		.upsideerrorstyling {
+			margin-right: 650px;
+			font-size: 2rem;
+		}
+}
+@media screen and (max-width: 1440px) {
+	#applybtn {
+        margin-top: 12px;
+        width: 310px;
+    }
+    .layui-input, .layui-textarea {
+        display: block;
+        width: 62.5%;
+        padding-left: 10px;
+    }
+		#applywrapper {
+        text-align: center;
+        margin-right: 37%;
+    }
+		select {
+        height: 38px;
+        width: 62.5%;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
+		.upsideerrorstyling {
+			margin-right: 350px;
+		}
+}
+@media screen and (max-width: 958px) {
+	#applybtn {
+        margin-top: 12px;
+        width: 240px;
+    }
+	.layui-input, .layui-textarea {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
+		#applywrapper {
+        text-align: center;
+        margin-right: 0%;
+    }
+		select {
+        height: 38px;
+        width: 100%;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
+		.upsideerrorstyling {
+			margin-right: 30px;
+			font-size: 2rem;
+		}
+}
+@media screen and (max-width: 768px) {	
+	.layui-input, .layui-textarea {
+    display: block;
+    width: 70.5%;
+    padding-left: 10px;
+}
+#applywrapper {
+        text-align: center;
+        margin-right: 13%;
+    }
+		#landingpic{
+	width: 76%;
+	margin-bottom: 20px;
+}
+#moapply {
+			display: none;
+			text-align: center;
+		}
+		select {
+        height: 38px;
+        width: 70.5%;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1.4rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
+}
+@media screen and (max-width: 500px) {
+	#applybtn {
+        margin-top: 12px;
+        width: 240px;
+    }
+	.sq-box {
+    background: #F7F7F7;
+    padding: 50px 0;
+    width: 800px;
+    margin: auto;
+}
+.layui-input, .layui-textarea {
+    display: block;
+    width: 59.5%;
+    padding-left: 10px;
+		height: 46px;
+}
+
+#landingpic{
+	width: 484px;
+	margin-bottom: 20px;
+}
+
+.layui-form {
+	padding: 0px;
+}
+    #applywrapper {
+        text-align: center;
+        margin-right: 40%;
+    }
+		#moapply {
+			display: block;
+			text-align: center;
+		}
+		select {
+				height: 46px;
+        width: 59.5%;
+        /* padding: 1rem 1.2rem; */
+        font-size: 1rem;
+        color: black;
+        text-transform: none;
+        margin: 0rem 0;
+        /* border-radius: .5rem; */
+        background: #fff;
+        border: 1px solid #e6e6e6;
+    }
+		.upsideerrorstyling {
+			margin-right: 300px;
+		}
+}
+@media screen and (max-width: 360px) {
+#landingpic{
+	width: 100vw;
+	margin-bottom: 20px;
+}
+}
+
+</style>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KGNZ3M7"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+
+    			<div class="path-container">
+				<div class="container">
+					<div class="container-box">
+<div class="path">
+    <ul>
+            <li><a href="{% url 'home' %}">홈</a></li>
+        <li><a href="{% url 'contact' %}">검사서비스신청</a></li>
+        
+
+    </ul>
+    </div>
+    <!-- <div class="page-banner-nav-swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active active">
+                        <a href="{% url 'contact' %}">문의하기</a>
+                    </div>
+                            </div>
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div> -->
+
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+    		<div class="topclsinfo">
+			<!-- <div class="container">
+				<div class="container-box">
+
+					<div class="title" >
+						<h2>검사서비스신청
+						</h2>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		
+		<!-- <h2 id="moapply">검사서비스신청
+						</h2> -->
+		<div id="join"></div>
+		<div class="sq-box">
+			<img id="landingpic" src="{% static 'images/landing003.jpg' %}" />
+			<div class="container">
+				<div class="container-box">
+
+					{% load widget_tweaks %}
+					<form action="#" method="post" class="layui-form">
+						{% csrf_token %}
+							{% if form.errors %}
+									<div class="upsideerrorstyling" style="text-align: center;">
+									<strong style="color: blue;"> 
+										<p>문의 접수가 완료되지 않았습니다.</p>
+										<p>***필수사항을 모두 입력하세요***</p>
+										<p> 성함/상호, 전화번호, 주소란을</p>
+										<p> 다시 한번 체크해주세요!!</p>
+									</strong>
+									</div>
+									<br class="">
+									<br class="">
+									
+									
+							
+							{% endif %}
+							<div class="layui-form">
+							{% for field in form %}           
+								{% if field.name == 'name' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+										성함/상호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'number' %}									
+								<div class="item">
+									<label>
+										<span>*</span>
+										전화번호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="전화번호 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'address001' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+									주소
+									</label>
+									<select name="{{ field.name }}" class="box" id="{{ field.id_for_label }}">
+                      <option value="">- 지역선택 -</option>
+                      <option value="서울특별시">서울특별시</option>              
+                      <option value="부산광역시">부산광역시</option>
+                      <option value="인천광역시">인천광역시</option>
+                      <option value="대구광역시">대구광역시</option>
+											<option value="광주광역시">광주광역시</option>
+											<option value="대전광역시">대전광역시</option>
+											<option value="세종특별자치시">세종특별자치시</option>
+											<option value="경기도">경기도</option>
+											<option value="강원도">강원도</option>
+											<option value="충청북도">충청북도</option>
+											<option value="충청남도">충청남도</option>
+											<option value="경상북도">경상북도</option>
+											<option value="경상남도">경상남도</option>
+											<option value="전라북도">전라북도</option>
+											<option value="전라남도">전라남도</option>
+											<option value="제주특별자치도">제주특별자치도</option>
+                    </select> 
+								</div>									
+								
+								{% elif field.name == 'address002' %}									
+										<div class="item">
+									<label>
+										<span>*</span>
+										주소: 시/군/구
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="시/군/구 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'promoperson' %}									              				
+								<div class="item">
+									<label>
+										<span></span>
+										추천인
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="추천인" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'subject' %}
+								
+								{% elif field.name == 'dbcode' %}
+								
+								{% elif field.name == 'body' %}
+								<div class="item">
+									<label>
+										<span></span>
+										문의내용
+									</label>
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용" class="layui-textarea" style="font-size: 15px;"></textarea >
+								</div>
+							</div>
+							{% elif field.name == 'terms_confirmed' %}
+							
+								
+								
+							<!-- <div class="col-6 col-12-mobile">
+								<input type="checkbox" id="copy" name="copy">
+								<label for="copy">Email me a copy of this message</label>
+							</div> -->
+						<!-- </div> -->
+							
+						<!-- 주석필요시 풀것 -->
+						<!-- <input type="checkbox" id="{{ field.id_for_label }}" name="{{ field.name }}" style="z-index: 0;"><span>(체크필요)</span> -->
+							
+						<!-- <div class="item"> -->
+								
+							<!-- 주석필요시 풀것 -->
+								<!-- <span id="pi">개인정보 수집동의 (필수*) <a href="/policy" target="_blank" ><span style="text-decoration: underline;">상세</span></a></span> -->
+								
+							<!-- </div> -->
+							</div>
+							
+							
+						{% endif %}
+			
+					<!-- <br> -->
+					
+			
+			
+			
+					{% endfor %}
+					
+				
+				
+								<div class="item" id="applywrapper" style="" >
+									
+										<input type="submit" value="상담신청" class="layui-btn buttonHover"  />
+									
+								</div>
+							</div>
+						</form>
+
+
+					<!-- <div class="layui-form">
+						<div class="item">
+							<label>
+								<span>*</span>
+								성함/상호
+							</label>
+							<input type="text" name="nsemail" class="layui-input" placeholder="성함/상호를 입력해주세요." lay-verType="tips" lay-verify="requireds|emails" value="" />
+						</div>
+						<div class="item">
+							<label>
+								<span>*</span>
+								전화번호
+							</label>
+							<input type="text" name="nsemail" class="layui-input" placeholder="전화번호를 입력해 주세요." lay-verType="tips" lay-verify="requireds|emails" value="" />
+						</div>
+						<div class="item">
+							<label>
+								<span>*</span>
+								문의내용
+							</label>
+							<textarea name="nscontent" placeholder="문의내용을 입력해 주세요." class="layui-textarea" lay-verType="tips" lay-verify="requireds"></textarea>
+
+						</div>
+
+						<div class="item">
+							<a href="javascript:;" lay-submit lay-filter="formShichang" class="layui-btn buttonHover"><span>보내기</span><div class="btnHover"></div></a>
+
+						</div>
+
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+
+
+
+    
+    
+    
+    
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript">
+        var someImages = document.querySelectorAll('img');
+        objectFitImages(someImages);
+        //AOS.init({
+        //	easing: 'ease-out-back',
+        //	duration: 1000
+        //});
+        AOS.init();
+        document.onreadystatechange = function () {
+            if (document.readyState === 'complete') {
+                AOS.init();
+            }
+        }
+
+        //2022 视频16：9
+        $(function () {
+
+            //微信
+            var wxOption = {
+                title: 'SOTO赛多空气消毒机官网',
+                link: location.href,
+                imgUrl: 'https://www.sotoairpurifier.com/content/img/fx.jpg',
+                desc: '高端消毒机 专业选赛多 https://www.soto.cn'
+            }
+            var appId = "wx7f9548d8827a59e6";
+            $.ajax({
+                url: 'https://api.soto.cn/api/wx/jsapisignatureasync',
+                data: { appId: appId, url: wxOption.link },
+                dataType: 'json',
+                type: 'get',
+                success: function (res) {
+                    if (res.statusCode == 200) {
+                        var data = res.data;
+                        wx.config({
+                            debug: false, //
+                            appId: appId, // 必填，公众号的唯一标识
+                            timestamp: Number(data.timestamp), // 必填，生成签名的时间戳
+                            nonceStr: data.noncestr, // 必填，生成签名的随机串
+                            signature: data.signature,// 必填，签名
+                            jsApiList: ['updateAppMessageShareData',
+                                'updateTimelineShareData',
+                                'onMenuShareTimeline',
+                                'onMenuShareAppMessage',
+                                'onMenuShareQQ',
+                                'onMenuShareWeibo',
+                                'onMenuShareQZone',] // 必填，需要使用的JS接口列表
+                        });
+                        wx.ready(function () {
+                            wx.onMenuShareTimeline({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                success: function () {
+                                    // 用户点击了分享后执行的回调函数
+                                },
+                            });
+                            wx.updateAppMessageShareData({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                desc: wxOption.desc, // 分享描述
+                                success: function () {
+                                    // 设置成功
+                                },
+                            });
+                            wx.updateTimelineShareData({
+                                title: wxOption.title, // 分享标题
+                                link: wxOption.link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                                imgUrl: wxOption.imgUrl, // 分享图标
+                                success: function () {
+                                    // 设置成功
+                                },
+                            });
+
+                        });
+                        wx.error(function (ress) {
+                            console.log(ress)
+                        });
+                    }
+                    else {
+                        console.log(res)
+                    }
+                }
+
+            });
+
+            $(window).resize(function () {
+                var videoH = $('.video-js').width() / 16 * 9;
+                var winW = $(window).width();
+                if (location.href.includes('brand/company')) {
+                    //未知，只适用企业简介视频
+                    if (winW < 768) {
+                        videoH = winW / 16 * 9 - 16;
+                    }
+                }
+                $('.video-js').css({ height: videoH + 'px' })
+            });
+            var videoH = $('.video-js').outerWidth() / 16 * 9;
+            var winW = $(window).width();
+            if (location.href.includes('brand/company')) {
+                //未知，只适用企业简介视频
+                if (winW < 768) {
+                    videoH = winW / 16 * 9 - 16;
+                }
+            }
+
+            $('.video-js').css({ height: videoH + 'px' })
+            console.log($('.video-js').outerWidth(), '$(.video - js).width()')
+            console.log(videoH, 'videoH')
+
+            console.log($(window).width(), 'windows width')
+        })
+    </script>
+
+    <!-- <div class="footer-icon">
+        <ul>
+            <li>
+                <div class="item" id="fot1">
+                    <div class="img">
+                        <img src="https://www.sotoairpurifier.comhttps://www.sotoairpurifier.com/Content/Images/icon/2023/email.png" />
+                    </div>
+                    <div class="hover" style="width:290px;left:-290px;">
+                        <div class="closess">
+                            <i class="layui-icon layui-icon-close"></i>
+                        </div>
+                        <p>sotosales1@outlook.com</p>
+                        <a href="mailto:sotosales1@outlook.com">sotosales1@outlook.com</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="item" id="fot2">
+                    <div class="img">
+                        <img src="https://www.sotoairpurifier.com/Content/Images/icon/2023/whatsapp.png" />
+                    </div>
+                    <div class="hover">
+                        <div class="closess">
+                            <i class="layui-icon layui-icon-close"></i>
+                        </div>
+                        <p>13811411994</p>
+                        <a href="tel:13811411994">13811411994</a>
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <a href="/contact/">
+                    <img src="https://www.sotoairpurifier.com/Content/Images/fot-3.png" />
+                    <p>
+                        Contact <br />Us
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div> -->
+
+
+</body>
+</html>
+{% endblock %}
