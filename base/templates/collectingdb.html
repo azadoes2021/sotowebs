@@ -93,19 +93,19 @@ header .navbar ul li a {
         {% for field in form %} 
             <div class="inputBox">
             {% if field.name == 'name' %}  
-            <input type="text" placeholder="성함/상호">
+            <input name="{{ field.name }}" type="text" placeholder="성함/상호" id="{{ field.id_for_label }}">
             {% elif field.name == 'number' %}
-            <input type="text" placeholder="전화번호">
+            <input name="{{ field.name }}" type="text" placeholder="전화번호" id="{{ field.id_for_label }}">
             </div>
             <div class="inputBox">
             {% elif field.name == 'address001' %}
-            <input type="text" placeholder="주소">
+            <input name="{{ field.name }}" type="text" placeholder="주소" id="{{ field.id_for_label }}">
             {% elif field.name == 'address002' %}
-            <input type="text" placeholder="시군구">
+            <input name="{{ field.name }}" type="text" placeholder="시군구" id="{{ field.id_for_label }}">
             </div>
             <div class="inputBox">
             {% elif field.name == 'promoperson' %}  
-            <input type="text" placeholder="추천인">
+            <input name="{{ field.name }}" type="text" placeholder="추천인" id="{{ field.id_for_label }}">
             </div>
             <textarea name="" id="" cols="30" rows="10" ></textarea>
             {% endif %}  
