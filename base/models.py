@@ -142,7 +142,7 @@ class Collectingdb(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='신규', verbose_name='status')
     # input = hidden : dbcode db01 - 문의하기db  db02 -  랜딩페이지 db  db03 - 추가 홍보페이지
 
-    # terms_confirmed = models.BooleanField(max_length=10, null=True, verbose_name="개인정보 수집 동의")
+    terms_confirmed = models.BooleanField(max_length=10, null=True, verbose_name="개인정보 수집 동의")
 
     # code = models.CharField(max_length=10, default='as01') # code 문의하기, as01로 코드두어서 나중에 디비 join시킬때 사용
     # dbcode = models.CharField(max_length=20, default='db01', verbose_name='디비코드')# input = hidden : dbcode db01 - 문의하기db  db02 -  랜딩페이지 db  db03 - 추가 홍보페이지

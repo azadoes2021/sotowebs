@@ -184,10 +184,10 @@ class CollectingdbForm(forms.Form):
         
     # )    
 
-    # terms_confirmed = forms.BooleanField(
+    terms_confirmed = forms.BooleanField(
         
-    #     required=False, label='개인정보 수집 및 이용 동의',
-    # )    
+        required=False, label='개인정보 수집 및 이용 동의',
+    )    
     
     
 
@@ -208,7 +208,7 @@ class CollectingdbForm(forms.Form):
         body = cleaned_data.get('body')
         
         
-        # terms_confirmed = cleaned_data.get('terms_confirmed')  
+        terms_confirmed = cleaned_data.get('terms_confirmed')  
         
         # dbcode = cleaned_data.get('dbcode')
 
@@ -227,7 +227,7 @@ class CollectingdbForm(forms.Form):
                 # subject = subject,
                 # subject02 = subject02,
                 body = body,
-                # terms_confirmed = terms_confirmed,
+                terms_confirmed = terms_confirmed,
                 # dbcode = dbcode,
                 # dbname = dbname,
                 # dbnamekr = dbnamekr,
