@@ -99,14 +99,14 @@ header .navbar ul li a {
             <div class="inputBox">
             <input name="{{ field.name }}" type="text" placeholder="전화번호" id="{{ field.id_for_label }}">
             </div>
-            {% elif field.name == 'address001' %}
+            <!-- {% elif field.name == 'address001' %}
             <div class="inputBox">
             <input name="{{ field.name }}" type="text" placeholder="주소" id="{{ field.id_for_label }}">
-            </div>            
-            <!-- {% elif field.name == 'address002' %}
+            </div>             -->
+            {% elif field.name == 'address002' %}
             <div class="inputBox">
             <input name="{{ field.name }}" type="text" placeholder="시군구" id="{{ field.id_for_label }}">
-            </div> -->
+            </div>
             {% elif field.name == 'promoperson' %}  
             <div class="inputBox">
             <input name="{{ field.name }}" type="text" placeholder="추천인" id="{{ field.id_for_label }}">
