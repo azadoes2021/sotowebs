@@ -88,32 +88,137 @@ header .navbar ul li a {
   <h1 class="title">contact us for latest updates</h1> -->
   
         {% load widget_tweaks %}
-        <form action="#" method="post">
-        {% csrf_token %}
-        {% for field in form %} 
-            <div class="inputBox">
-            {% if field.name == 'name' %}  
-            <input name="{{ field.name }}" type="text" placeholder="성함/상호" id="{{ field.id_for_label }}">
-            {% elif field.name == 'number' %}
-            <input name="{{ field.name }}" type="text" placeholder="전화번호" id="{{ field.id_for_label }}">
-            </div>
-            <div class="inputBox">
-            {% elif field.name == 'address001' %}
-            <input name="{{ field.name }}" type="text" placeholder="주소" id="{{ field.id_for_label }}">
-            {% elif field.name == 'address002' %}
-            <input name="{{ field.name }}" type="text" placeholder="시군구" id="{{ field.id_for_label }}">
-            </div>
-            <div class="inputBox">
-            {% elif field.name == 'promoperson' %}  
-            <input name="{{ field.name }}" type="text" placeholder="추천인" id="{{ field.id_for_label }}">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" ></textarea>
-            {% endif %}  
-        {% endfor %}  
-
-    <input type="submit" value="message" class="btn">
-
-  </form>
+					<form action="#" method="post" class="layui-form">
+						{% csrf_token %}
+							{% if form.errors %}
+									<div class="upsideerrorstyling" style="text-align: center;">
+									<strong style="color: blue;"> 
+										<p>문의 접수가 완료되지 않았습니다.</p>
+										<p>***필수사항을 모두 입력하세요***</p>
+										<p> 성함/상호, 전화번호, 주소란을</p>
+										<p> 다시 한번 체크해주세요!!</p>
+									</strong>
+									</div>
+									<br class="">
+									<br class="">
+									
+									
+							
+							{% endif %}
+							<div class="layui-form">
+							{% for field in form %}           
+								{% if field.name == 'name' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+										성함/상호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="성함/상호 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'number' %}									
+								<div class="item">
+									<label>
+										<span>*</span>
+										전화번호
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="전화번호 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'address001' %}
+								<div class="item">
+									<label>
+										<span>*</span>
+									주소
+									</label>
+									<select name="{{ field.name }}" class="box" id="{{ field.id_for_label }}">
+                      <option value="">- 지역선택 -</option>
+                      <option value="서울특별시">서울특별시</option>              
+                      <option value="부산광역시">부산광역시</option>
+                      <option value="인천광역시">인천광역시</option>
+                      <option value="대구광역시">대구광역시</option>
+											<option value="광주광역시">광주광역시</option>
+											<option value="대전광역시">대전광역시</option>
+											<option value="세종특별자치시">세종특별자치시</option>
+											<option value="경기도">경기도</option>
+											<option value="강원도">강원도</option>
+											<option value="충청북도">충청북도</option>
+											<option value="충청남도">충청남도</option>
+											<option value="경상북도">경상북도</option>
+											<option value="경상남도">경상남도</option>
+											<option value="전라북도">전라북도</option>
+											<option value="전라남도">전라남도</option>
+											<option value="제주특별자치도">제주특별자치도</option>
+                    </select> 
+								</div>									
+								
+								{% elif field.name == 'address002' %}									
+										<div class="item">
+									<label>
+										<span>*</span>
+										주소: 시/군/구
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="시/군/구 (필수*)" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'promoperson' %}									              				
+								<div class="item">
+									<label>
+										<span></span>
+										추천인
+									</label>
+									<input name="{{ field.name }}" class="layui-input" id="{{ field.id_for_label }}" placeholder="추천인" type="text" style="font-size: 15px;" />
+								</div>
+								{% elif field.name == 'subject' %}
+								
+								{% elif field.name == 'dbcode' %}
+								
+								{% elif field.name == 'body' %}
+								<div class="item">
+									<label>
+										<span></span>
+										문의내용
+									</label>
+									<textarea name="{{ field.name }}" id="{{ field.id_for_label }}" rows="8" placeholder="문의내용" class="layui-textarea" style="font-size: 15px;"></textarea >
+								</div>
+							</div>
+							{% elif field.name == 'terms_confirmed' %}
+							
+								
+								
+							<!-- <div class="col-6 col-12-mobile">
+								<input type="checkbox" id="copy" name="copy">
+								<label for="copy">Email me a copy of this message</label>
+							</div> -->
+						<!-- </div> -->
+							
+						<!-- 주석필요시 풀것 -->
+						<!-- <input type="checkbox" id="{{ field.id_for_label }}" name="{{ field.name }}" style="z-index: 0;"><span>(체크필요)</span> -->
+							
+						<!-- <div class="item"> -->
+								
+							<!-- 주석필요시 풀것 -->
+								<!-- <span id="pi">개인정보 수집동의 (필수*) <a href="/policy" target="_blank" ><span style="text-decoration: underline;">상세</span></a></span> -->
+								
+							<!-- </div> -->
+							</div>
+							
+							
+						{% endif %}
+			
+					<!-- <br> -->
+					
+			
+			
+			
+					{% endfor %}
+					
+				
+				
+								<div class="item" id="applywrapper" style="" >
+									
+										<input type="submit" value="상담신청" class="layui-btn buttonHover"  />
+									
+								</div>
+							</div>
+						</form>
 </section>
 </div>
 </body>
