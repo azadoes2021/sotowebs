@@ -167,6 +167,18 @@ header #menu {
   text-transform: none;
   color: #000;  
 }
+.inputBox select {
+    height: 4rem;
+    /* width: 49%; */
+    width: 100%;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    font-size: 2rem;
+    border: .2rem solid #b8b8b8;
+    background: none;
+    text-transform: none;
+    color: #000;
+}
 .contact form .inputBox input::placeholder, .contact form textarea::placeholder {
   /* color: #ccc; */
 }
