@@ -214,18 +214,18 @@ def success(request):
     
 def successori(request): 
     send_mail(
-        '[SOTOPLUS] 문의 접수가 들어왔습니다.',
-        '문의 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
-        'bluewate02@naver.com',
-        ['bluewate02@naver.com'],
+        # '[SOTOPLUS] 문의 접수가 들어왔습니다.',
+        # '문의 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
+        # 'bluewate02@naver.com',
+        # ['bluewate02@naver.com'],
     )
     return redirect("successree")
 def successori2(request): 
     send_mail(
-        '[SOTOPLUS] 검사 신청 접수가 들어왔습니다.',
-        '검사 신청 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
-        'bluewate02@naver.com',
-        ['bluewate02@naver.com'],
+        # '[SOTOPLUS] 검사 신청 접수가 들어왔습니다.',
+        # '검사 신청 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
+        # 'bluewate02@naver.com',
+        # ['bluewate02@naver.com'],
     )
     return redirect("successree2")
 def successree(request): 
