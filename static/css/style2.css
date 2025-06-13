@@ -41,7 +41,7 @@ body {
   position: relative;
   z-index: 0;
 }
-.btn::before {
+/* .btn::before {
 
   content: '';
   position: absolute;
@@ -56,7 +56,7 @@ body {
 .btn:hover::before {
   left: 0;
   width: 100%;
-}
+} */
 
 .heading {
   padding: 0.5rem 2rem;
@@ -191,10 +191,10 @@ header #menu {
   padding: 1rem;
   resize: none;
 }
-.contact form .btn:hover {
+/* .contact form .btn:hover {
   background: #fff;
   color: #332;
-}
+} */
 /* RWD */
 @media (max-width:768px) {
   html {

@@ -67,7 +67,9 @@ urlpatterns = [
     
     path('success',views.success , name="success"),
     path('successori',views.successori , name="successori"),
+    path('successori2',views.successori2 , name="successori2"),
     path('successree',views.successree , name="successree"),
+    path('successree2',views.successree2 , name="successree2"),
     path('policy',views.policy , name="policy"),
 
     
