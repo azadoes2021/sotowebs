@@ -135,7 +135,7 @@ header #menu {
   background-size: cover;
   background-attachment: fixed;
   padding: 1rem;
-  /* padding-top: 8rem; */
+  padding-top: 3rem;
 }
 .contact .heading {
   background: rgba(0, 0, 0, 0.5);
