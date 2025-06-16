@@ -65,7 +65,22 @@
                 height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+    {% if form.errors %}
+									<br><br>
+									<div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;">
+									<strong style="color: blue;"> 
+										<p>문의 접수가 완료되지 않았습니다.</p>
+										<p>***필수사항을 모두 입력하세요***</p>
+										<p> 성함/상호, 전화번호, 문의내용을</p>
+										<p> 다시 한번 체크해주세요!!</p>
+									</strong>
+									</div>
+									
+									
+									
+									
+							
+							{% endif %}
 
     			<div class="path-container">
 				<div class="container">
@@ -307,7 +322,7 @@
 					<form action="#" method="post" class="layui-form">
 						{% csrf_token %}
 							{% if form.errors %}
-									<div class="upsideerrorstyling" style="text-align: center;">
+									<div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;">
 									<strong style="color: blue;"> 
 										<p>문의 접수가 완료되지 않았습니다.</p>
 										<p>***필수사항을 모두 입력하세요***</p>

@@ -4,7 +4,6 @@ from .forms import AskForm, CollectingdbForm
 from django.core.mail import send_mail
 from .utils import searchposts, paginatePosts
 from .models import Product
-# Create your views here.
 class HomeView(FormView):
     # model = Post     
     template_name = 'home.html'
@@ -227,6 +226,7 @@ def successori2(request):
     #     'bluewate02@naver.com',
     #     ['bluewate02@naver.com'],
     # )
+    messages.error(request, '아이템 생성에 실패했습니다.')
     return redirect("successree2")
 def successree(request): 
     return render(request, 'successree.html', {})    
