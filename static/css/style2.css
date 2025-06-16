@@ -32,7 +32,8 @@ body {
   padding: 0.7rem 3.5rem;
   border-radius: 5rem;
   color: #fff;
-  background: var(--blue);
+  /* background: var(--blue); */
+  background: #003a83;
   margin-top: 1rem;
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -60,7 +61,7 @@ body {
 
 .heading {
   padding: 0.5rem 2rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   background: rgba(0, 0, 0, 0.1);
   color: var(--blue);
   display: inline-block;
@@ -82,7 +83,8 @@ header {
   left: 0;
   z-index: 1000;
   padding: 2rem 7%;
-  background: var(--blue);
+  /* background: var(--blue); */
+  background: #003a83;
 }
 header .logo {
   font-size: 2.5rem;
@@ -128,14 +130,14 @@ header #menu {
 
 /* Contact */
 .contact {
-  min-height: 100rem;
+  min-height: 70rem;
   text-align: center;
   background: rgb(252 252 252);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   padding: 1rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
 }
 .contact .heading {
   background: rgba(0, 0, 0, 0.5);
@@ -260,6 +262,9 @@ header #menu {
   .inputBox select {
     
     width: 100%;
-    
+
+}
+.contact {
+  min-height: 95rem;
 }
 }
