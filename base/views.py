@@ -226,7 +226,6 @@ def successori2(request):
     #     'bluewate02@naver.com',
     #     ['bluewate02@naver.com'],
     # )
-    messages.error(request, '아이템 생성에 실패했습니다.')
     return redirect("successree2")
 def successree(request): 
     return render(request, 'successree.html', {})    
