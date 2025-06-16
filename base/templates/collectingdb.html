@@ -174,9 +174,9 @@ header .navbar ul li a {
             {% if field.name == 'name' %}  
             <div class="inputBox">            
             <input name="{{ field.name }}" type="text" placeholder="성함/상호" id="{{ field.id_for_label }}">
-            </div>
+            <!-- </div> -->
             {% elif field.name == 'number' %}
-            <div class="inputBox">
+            <!-- <div class="inputBox"> -->
             <input name="{{ field.name }}" type="text" placeholder="전화번호" id="{{ field.id_for_label }}">
             </div>
             {% elif field.name == 'address001' %}
@@ -200,9 +200,9 @@ header .navbar ul li a {
                 <option value="전라남도">전라남도</option>
                 <option value="제주특별자치도">제주특별자치도</option>
             </select> 
-            </div>            
+            <!-- </div>             -->
             {% elif field.name == 'address002' %}
-            <div class="inputBox">
+            <!-- <div class="inputBox"> -->
             <input name="{{ field.name }}" type="text" placeholder="시군구" id="{{ field.id_for_label }}">
             </div>
             {% elif field.name == 'promoperson' %}  

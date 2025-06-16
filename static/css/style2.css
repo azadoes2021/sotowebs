@@ -157,8 +157,8 @@ header #menu {
 }
 .contact form .inputBox input, .contact form textarea {
   height: 4rem;
-  /* width: 49%; */
-  width: 100%;
+  width: 49%;
+  /* width: 100%; */
   padding: 0 1rem;
   margin: 1rem 0;
   font-size: 2rem;
@@ -169,8 +169,8 @@ header #menu {
 }
 .inputBox select {
     height: 4rem;
-    /* width: 49%; */
-    width: 100%;
+    width: 49%;
+    /* width: 100%; */
     padding: 0 1rem;
     margin: 1rem 0;
     font-size: 2rem;
@@ -257,4 +257,9 @@ header #menu {
   .contact form .inputBox input {
     width: 100%;
   }
+  .inputBox select {
+    
+    width: 100%;
+    
+}
 }
