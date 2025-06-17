@@ -174,12 +174,12 @@ class CollectingdbForm(forms.Form):
     # )
     
     
-    body = forms.CharField(
-        error_messages={
-            # 'required': '문의내용을 입력해주세요.'
-        },
-        required=False, max_length=2000, label='문의내용'
-    )
+    # body = forms.CharField(
+    #     error_messages={
+    #         # 'required': '문의내용을 입력해주세요.'
+    #     },
+    #     required=False, max_length=2000, label='문의내용'
+    # )
      
 
     # terms_confirmed = forms.BooleanField(
@@ -212,7 +212,7 @@ class CollectingdbForm(forms.Form):
 
         # subject02 = cleaned_data.get('subject02')
 
-        body = cleaned_data.get('body')
+        # body = cleaned_data.get('body')
         
         
         terms_confirmed = cleaned_data.get('terms_confirmed')  
@@ -234,7 +234,7 @@ class CollectingdbForm(forms.Form):
                 promoperson = promoperson,
                 # subject = subject,
                 # subject02 = subject02,
-                body = body,
+                # body = body,
                 terms_confirmed = terms_confirmed,
                 # dbcode = dbcode,
                 # dbname = dbname,

@@ -213,8 +213,6 @@ header .navbar ul li a {
             <div class="inputBox">
             <input name="{{ field.name }}" type="text" placeholder="추천인" id="{{ field.id_for_label }}">
             </div>
-            {% elif field.name == 'body' %}
-            <textarea name="{{ field.name }}" id="{{ field.id_for_label }}" cols="30" rows="10" placeholder="문의내용" ></textarea>
             {% elif field.name == 'terms_confirmed' %}
             
             <div id="myDIV" onscroll="myFunction()">
