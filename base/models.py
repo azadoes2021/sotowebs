@@ -106,25 +106,28 @@ class Collectingdb(models.Model):
     ADDRESS001_CHOICES = (
         ('서울(서울이남)','서울(서울이남)'),
         ('서울(서울이북)','서울(서울이북)'),
-        ('부산광역시','부산광역시'),
+        ('경기북부','경기북부'),
+        ('경기남부','경기남부'),
         ('인천광역시','인천광역시'),
-        ('대구광역시','대구광역시'),
-        ('광주광역시','광주광역시'),
-        ('대전광역시','대전광역시'),
-        ('세종특별자치시','세종특별자치시'),
-        ('경기도','경기도'),
         ('강원도','강원도'),
-        ('충청북도','충청북도'),
         ('충청남도','충청남도'),
+        ('대전광역시','대전광역시'),
+        ('충청북도','충청북도'),
+        ('세종시','세종시'),
+        ('부산광역시','부산광역시'),
+        ('울산광역시','울산광역시'),
+        ('대구광역시','대구광역시'),
         ('경상북도','경상북도'),
         ('경상남도','경상남도'),
-        ('전라북도','전라북도'),
         ('전라남도','전라남도'),
-        ('제주특별자치도','제주특별자치도'),
+        ('광주광역시','광주광역시'),
+        ('전라북도','전라북도'),
+        ('제주시','제주시'),
     )
     # [중요 title 없앨것입니다]
     # title = models.CharField(max_length=100, verbose_name='제목', default='') 
 
+    dhname = models.CharField(max_length=50 ,null=True, verbose_name='치과명')
     name = models.CharField(max_length=50 ,null=True, verbose_name='이름(상호)')
     number = models.CharField(max_length=50 ,null=True, verbose_name='전화번호')
     # email = models.EmailField(max_length=50 ,null=True, verbose_name='이메일')

@@ -112,6 +112,12 @@ class AskForm(forms.Form):
 
 
 class CollectingdbForm(forms.Form):
+    dhname = forms.CharField(
+        error_messages={
+            'required': '이름 또는 상호를 입력해주세요.'
+        },
+        max_length=64, label='이름(상호)'
+    )
     name = forms.CharField(
         error_messages={
             'required': '이름 또는 상호를 입력해주세요.'
@@ -193,12 +199,13 @@ class CollectingdbForm(forms.Form):
 
     def clean(self):        
         cleaned_data = super().clean()
+        dhname = cleaned_data.get('name')        
         name = cleaned_data.get('name')        
         number = cleaned_data.get('number')
         address001 = cleaned_data.get('address001')        
         address002 = cleaned_data.get('address002')        
 
-        name = cleaned_data.get('name')        
+        # name = cleaned_data.get('name')        
         promoperson = cleaned_data.get('promoperson')
 
         # subject = cleaned_data.get('subject')
@@ -219,6 +226,7 @@ class CollectingdbForm(forms.Form):
         if name or number:
 
             collectingdb = Collectingdb(
+                dhname = dhname,
                 name = name,
                 number = number,
                 address001 = address001,
