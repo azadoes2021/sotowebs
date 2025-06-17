@@ -136,7 +136,7 @@ header .navbar ul li a {
 <section>
 {% if form.errors %}
         <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;margin-top: 11rem;">
-        <strong style="color: blue;"> 
+        <strong style="color: red;"> 
             <p>신청이 완료되지 않았습니다.</p>
             <!-- <p>***필수사항을 모두 입력하세요***</p> -->
             <p> 치과명, 성함/상호, 전화번호, 지역란을</p>
@@ -158,7 +158,7 @@ header .navbar ul li a {
         {% csrf_token %}
         {% if form.errors %}
         <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;">
-        <strong style="color: blue;"> 
+        <strong style="color: red;"> 
             <p>신청이 완료되지 않았습니다.</p>
             <!-- <p>***필수사항을 모두 입력하세요***</p> -->
             <p> 치과명, 성함/상호, 전화번호, 지역란을</p>
