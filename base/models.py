@@ -125,10 +125,9 @@ class Collectingdb(models.Model):
         ('제주시','제주시'),
     )
     CATE001_CHOICES = (
-        ('신규','신규'),
-        ('완료','완료'),
-        ('진행중','진행중'),
-        ('보류','보류'),
+        ('구매','구매'),
+        ('렌탈','렌탈'),
+        
     )
     # [중요 title 없앨것입니다]
     # title = models.CharField(max_length=100, verbose_name='제목', default='') 
