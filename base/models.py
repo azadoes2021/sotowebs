@@ -153,7 +153,7 @@ class Collectingdb(models.Model):
     # dbname = models.CharField(max_length=20, default='', verbose_name='dbname')
     # dbnamekr = models.CharField(max_length=20, default='', verbose_name='DB종류')
     address001 = models.CharField(max_length=10, choices=ADDRESS001_CHOICES, null=True, verbose_name='주소1')
-    address002 = models.CharField(max_length=50 ,null=True, verbose_name='주소2')        
+    # address002 = models.CharField(max_length=50 ,null=True, verbose_name='주소2')        
     promoperson = models.CharField(max_length=50 ,null=True, verbose_name='추천인')        
     # object~~ 대신에 제목, 작성자 title name 로 나오도록
     def __str__(self):
