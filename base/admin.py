@@ -35,14 +35,14 @@ class CollectingdbAdmin(admin.ModelAdmin):
     # list_filter = ('price', 'name', ) 추후에 상태 컬럼이 필요한 모델에는 
     # 'status' ex. 완료 진행중 둘중 하나로 어드민에서 '필터' 가능하도록 할 것
     #
-    list_filter = ('dhname', 'name', 'status', 'created', )
-    list_display = ('dhname', 'name', 'status', 'created', )
+    list_filter = ('cate001','dhname', 'name', 'number', 'address001', 'status', 'created', )
+    list_display = ('cate001','dhname', 'name', 'number', 'address001', 'status', 'created', )
     # 
 
 
 
     def changelist_view(self, request, extra_context = None):
-        extra_context = { 'title': '검사신청DB' }
+        extra_context = { 'title': '딜러DB' }
         return super().changelist_view(request, extra_context)
 
 admin.site.register(Post, PostAdmin)
