@@ -124,11 +124,18 @@ class Collectingdb(models.Model):
         ('전라북도','전라북도'),
         ('제주시','제주시'),
     )
+    CATE001_CHOICES = (
+        ('신규','신규'),
+        ('완료','완료'),
+        ('진행중','진행중'),
+        ('보류','보류'),
+    )
     # [중요 title 없앨것입니다]
     # title = models.CharField(max_length=100, verbose_name='제목', default='') 
 
+    cate001 = models.CharField(max_length=10, choices=CATE001_CHOICES, null=True, verbose_name='구매/렌탈')
     dhname = models.CharField(max_length=50 ,null=True, verbose_name='치과명')
-    name = models.CharField(max_length=50 ,null=True, verbose_name='이름(상호)')
+    name = models.CharField(max_length=50 ,null=True, verbose_name='성함')
     number = models.CharField(max_length=50 ,null=True, verbose_name='전화번호')
     # email = models.EmailField(max_length=50 ,null=True, verbose_name='이메일')
 

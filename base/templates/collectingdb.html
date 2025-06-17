@@ -170,8 +170,16 @@ header .navbar ul li a {
 									
 							
         {% endif %}
-        {% for field in form %} 
-            {% if field.name == 'dhname' %}  
+        {% for field in form %}
+            {% if field.name == 'cate001' %}
+            <div class="inputBox">
+            <select name="{{ field.name }}" class="" id="{{ field.id_for_label }}">
+                <option value="">- 지역선택 -</option>
+                <option value="구매">구매</option>              
+                <option value="렌탈">렌탈</option>                              
+            </select> 
+            </div>         
+            {% elif field.name == 'dhname' %}  
             <div class="inputBox">            
             <input name="{{ field.name }}" type="text" placeholder="치과명" id="{{ field.id_for_label }}">
             </div>
