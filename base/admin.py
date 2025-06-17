@@ -35,8 +35,8 @@ class CollectingdbAdmin(admin.ModelAdmin):
     # list_filter = ('price', 'name', ) 추후에 상태 컬럼이 필요한 모델에는 
     # 'status' ex. 완료 진행중 둘중 하나로 어드민에서 '필터' 가능하도록 할 것
     #
-    list_filter = ('name', 'status', 'created', )
-    list_display = ('name', 'number', 'status', 'created')
+    list_filter = ('dhname', 'name', 'status', 'created', )
+    list_display = ('dhname', 'name', 'status', 'created', )
     # 
 
 
