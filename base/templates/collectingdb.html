@@ -137,8 +137,8 @@ header .navbar ul li a {
         <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;margin-top: 11rem;">
         <strong style="color: blue;"> 
             <p>DB입력이 완료되지 않았습니다.</p>
-            <p>***필수사항을 모두 입력하세요***</p>
-            <p> 성함/상호, 전화번호, 주소란을</p>
+            <!-- <p>***필수사항을 모두 입력하세요***</p> -->
+            <p> 치과명, 성함/상호, 전화번호, 지역란을</p>
             <p> 다시 한번 체크해주세요!!</p>
         </strong>
         </div>			
@@ -159,8 +159,8 @@ header .navbar ul li a {
         <div class="upsideerrorstyling" style="text-align: center;font-size: 2rem;">
         <strong style="color: blue;"> 
             <p>DB입력이 완료되지 않았습니다.</p>
-            <p>***필수사항을 모두 입력하세요***</p>
-            <p> 성함/상호, 전화번호, 주소란을</p>
+            <!-- <p>***필수사항을 모두 입력하세요***</p> -->
+            <p> 치과명, 성함/상호, 전화번호, 지역란을</p>
             <p> 다시 한번 체크해주세요!!</p>
         </strong>
         </div>
@@ -178,17 +178,17 @@ header .navbar ul li a {
                 <option value="구매">구매</option>              
                 <option value="렌탈">렌탈</option>                              
             </select> 
-            </div>         
+            <!-- </div>          -->
             {% elif field.name == 'dhname' %}  
-            <div class="inputBox">            
+            <!-- <div class="inputBox">             -->
             <input name="{{ field.name }}" type="text" placeholder="치과명" id="{{ field.id_for_label }}">
             </div>
             {% elif field.name == 'name' %}  
             <div class="inputBox">            
             <input name="{{ field.name }}" type="text" placeholder="성함" id="{{ field.id_for_label }}">
-            </div>
+            <!-- </div> -->
             {% elif field.name == 'number' %}
-            <div class="inputBox">
+            <!-- <div class="inputBox"> -->
             <input name="{{ field.name }}" type="text" placeholder="전화번호" id="{{ field.id_for_label }}">
             </div>
             {% elif field.name == 'address001' %}
@@ -218,7 +218,7 @@ header .navbar ul li a {
             </div>            
             
             {% elif field.name == 'promoperson' %}  
-            <div class="inputBox">
+            <!-- <div class="inputBox"> -->
             <input name="{{ field.name }}" type="text" placeholder="추천인" id="{{ field.id_for_label }}">
             </div>
             {% elif field.name == 'terms_confirmed' %}
