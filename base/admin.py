@@ -42,7 +42,7 @@ class CollectingdbAdmin(admin.ModelAdmin):
 
 
     def changelist_view(self, request, extra_context = None):
-        extra_context = { 'title': '딜러DB' }
+        extra_context = { 'title': '상담신청DB' }
         return super().changelist_view(request, extra_context)
 
 admin.site.register(Post, PostAdmin)

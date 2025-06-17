@@ -89,6 +89,7 @@
     border: 1px solid black;
     border-radius: 0.5rem;
     display: none;
+    margin-top: 1.5rem;
 }
 #myDIV.agree_active {
   display: block;
@@ -116,10 +117,10 @@ header .navbar ul li a {
   
         
 
-  <div id="menu" class="" ><a class="active" href="#cont">딜러 DB입력</a></div>  
+  <div id="menu" class="" ><a class="active" href="#cont">상담신청</a></div>  
   <nav class="navbar">
     <ul>
-      <li><a class="active" href="#cont">딜러 DB입력</a></li>
+      <li><a class="active" href="#cont">상담신청</a></li>
       <!-- <li><a href="#about">about</a></li>
       <li><a href="#features">features</a></li>
       <li><a href="#product">product</a></li>
@@ -128,7 +129,7 @@ header .navbar ul li a {
     </ul>
   </nav>
 </header>
-<div id="rbbtn"><a href="#cont">DB <br> 입력 </a>
+<div id="rbbtn"><a href="#cont">상담 <br> 신청 </a>
 
 
 </div>
@@ -148,8 +149,8 @@ header .navbar ul li a {
 </section> 
 
 <section class="contact" id="contact">
-  <!-- <h1 class="heading"></h1> -->
-  <!-- <br> -->
+  <h1 class="heading">상담신청</h1>
+  <br>
   <!-- <h1 class="title">contact us for latest updates</h1> -->
   
         {% load widget_tweaks %}
@@ -377,10 +378,11 @@ header .navbar ul li a {
             </div>
             <br>
           </div>
-
+          <div style="margin-top: 2rem;">
           <input type="checkbox" id="{{ field.id_for_label }}" name="{{ field.name }}">
           <span style="font-size: 17px;padding: 0 0 0 6px;">개인정보 수집 및 이용에 동의합니다. 
-            <span id="agree_content" style="text-decoration: underline;cursor: pointer;">[약관]</span></span>
+          <span id="agree_content" style="text-decoration: underline;cursor: pointer;">[약관]</span></span>
+          </div>
             {% endif %}  
             
         {% endfor %}  

@@ -171,7 +171,7 @@ class Collectingdb(models.Model):
     # admin에서 쉽게 사용하기 위해 meta를 사용 => 1.테이블명, 2.어드민에서 사용될 이름
     class Meta:
         # db_table = 'py_user'
-        verbose_name = '딜러DB'
-        verbose_name_plural = '딜러DB'
+        verbose_name = '상담신청DB'
+        verbose_name_plural = '상담신청DB'
         ordering = ['-created']
 
