@@ -175,7 +175,7 @@ header .navbar ul li a {
             <div class="inputBox">            
             <input name="{{ field.name }}" type="text" placeholder="치과명" id="{{ field.id_for_label }}">
             </div>
-            {% if field.name == 'name' %}  
+            {% elif field.name == 'name' %}  
             <div class="inputBox">            
             <input name="{{ field.name }}" type="text" placeholder="성함" id="{{ field.id_for_label }}">
             </div>
