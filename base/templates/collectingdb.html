@@ -66,6 +66,10 @@
     width: 100%;
     margin-top: 7rem;
   }
+  .ctitle {
+    font-size: 2rem;
+    color :#fff
+  }
   #rbbtn {
     position: fixed;
     text-align: center;
@@ -110,6 +114,11 @@ header .navbar ul li a {
     padding: 1rem;
     
 }
+@media (max-width:768px) {
+  .logo {
+    display: none;
+  }
+}
 @media (max-width:500px) {
   .landingpic001 {
     width: 100%;
@@ -121,14 +130,16 @@ header .navbar ul li a {
 <body>
   
 <header>
-  <a href="{% url 'collectingdb' %}" class="logo"><i class="fas fa-home"></i>SOTO PLUS</a>
+  <!-- <a href="{% url 'collectingdb' %}" class="logo"><i class="fas fa-home"></i>SOTO PLUS</a> -->
+  <a href="" class="logo"><i class=""></i>SOTO PLUS</a>
   
-        
 
-  <div id="menu" class="" ><a class="active" href="#cont">상담신청</a></div>  
+  <div class="ctitle">UV-PCO 기술 치과진료실 특화 SOTO</div>        
+
+  <div id="menu" class="" ><a class="active" href="#cont">SOTO 구매 신청</a></div>  
   <nav class="navbar">
     <ul>
-      <li><a class="active" href="#cont">상담신청</a></li>
+      <li><a class="active" href="#cont">SOTO 구매 신청</a></li>
       <!-- <li><a href="#about">about</a></li>
       <li><a href="#features">features</a></li>
       <li><a href="#product">product</a></li>
@@ -137,7 +148,7 @@ header .navbar ul li a {
     </ul>
   </nav>
 </header>
-<div id="rbbtn"><a href="#cont">상담 <br> 신청 </a>
+<div id="rbbtn"><a href="#cont">구매상담신청 GO</a>
 
 
 </div>
@@ -152,10 +163,10 @@ header .navbar ul li a {
         </strong>
         </div>			
         {% endif %}
-  <img class="landingpic001" src="{% static 'images/001.gif' %}" alt="">
+  <img class="landingpic001" src="{% static 'images/001.jpg' %}" alt="">
   <img class="landingpic" src="{% static 'images/002.jpg' %}" alt="">
   <img class="landingpic" src="{% static 'images/003.jpg' %}" alt="">
-  <img class="landingpic" src="{% static 'images/004.gif' %}" alt="">
+  <img class="landingpic" src="{% static 'images/004.jpg' %}" alt="">
   <img class="landingpic" src="{% static 'images/005.jpg' %}" alt="">
   <img class="landingpic" src="{% static 'images/006.jpg' %}" alt="">
   <img class="landingpic" src="{% static 'images/007.jpg' %}" alt="">
@@ -163,7 +174,7 @@ header .navbar ul li a {
 </section> 
 
 <section class="contact" id="contact">
-  <h1 class="heading">상담신청</h1>
+  <h1 class="heading">SOTO 구매 신청</h1>
   <br>
   <!-- <h1 class="title">contact us for latest updates</h1> -->
   

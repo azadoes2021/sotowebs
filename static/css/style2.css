@@ -247,6 +247,10 @@ header #menu {
   .contact form {
     width: 95%;
   }
+  header .navbar ul li a.active::before, header #menu {
+
+  font-size: 2rem;
+}
 }
 @media (max-width:500px) {
   html {
