@@ -26,6 +26,7 @@ html {
 
 body {
   overflow-x: hidden;
+  background: lightgray;
 }
 .btn {
   font-size: 2rem;
