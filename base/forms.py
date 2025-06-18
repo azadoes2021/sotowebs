@@ -206,7 +206,7 @@ class CollectingdbForm(forms.Form):
     def clean(self):        
         cleaned_data = super().clean()
         cate001 = cleaned_data.get('cate001')        
-        dhname = cleaned_data.get('name')        
+        dhname = cleaned_data.get('dhname')        
         name = cleaned_data.get('name')        
         number = cleaned_data.get('number')
         address001 = cleaned_data.get('address001')        
