@@ -73,7 +73,7 @@
   #rbbtn {
     position: fixed;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 15rem;
     height: 15rem;
     padding: 2rem;
@@ -83,6 +83,9 @@
     border-radius: 50%;
     color: white;
     background: rgba(0,58,131,0.8);
+    display: flex; /* 글자 가운데 정렬을 위해 사용 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
   }
   a {
     text-decoration: none;
@@ -159,8 +162,8 @@ header .navbar ul li a.active::before, header #menu {
     </ul>
   </nav>
 </header>
-<div id="rbbtn"><br>
-  <a href="#cont">구매상담신청 <br><br> <span>GO</span> </a>
+<div id="rbbtn">
+  <a href="#cont">구매상담신청  <span>GO</span> </a>
 
 
 </div>
@@ -186,7 +189,7 @@ header .navbar ul li a.active::before, header #menu {
 </section> 
 
 <section class="contact" id="contact">
-  <h1 class="heading">SOTO 구매 신청</h1>
+  <h1 class="heading">SOTO 구매 상담 신청</h1>
   <br>
   <!-- <h1 class="title">contact us for latest updates</h1> -->
   
