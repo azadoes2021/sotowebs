@@ -138,6 +138,8 @@ header #menu {
   background-attachment: fixed;
   padding: 1rem;
   padding-top: 3rem;
+
+  border: 5px solid gray;
 }
 .contact .heading {
   background: rgba(0, 0, 0, 0.5);
