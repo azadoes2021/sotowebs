@@ -130,7 +130,7 @@ header #menu {
 
 /* Contact */
 .contact {
-  min-height: 70rem;
+  min-height: 50rem;
   text-align: center;
   background: rgb(252 252 252);
   background-position: center;
@@ -265,6 +265,6 @@ header #menu {
 
 }
 .contact {
-  min-height: 95rem;
+  min-height: 65rem;
 }
 }
