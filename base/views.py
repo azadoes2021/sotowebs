@@ -224,7 +224,7 @@ def successori2(request):
         '[SOTOPLUS] 검사 신청 접수가 들어왔습니다.',
         '검사 신청 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
         'bluewate02@naver.com',
-        ['ntkwill@gmail.com'],
+        ['bluewate02@naver.com'],
     )
     return redirect("successree2")
 def successree(request): 
