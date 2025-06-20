@@ -1,9 +1,9 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.edit import FormView
-from .forms import AskForm, CollectingdbForm
+from .forms import AskForm, CollectingdbForm, CollectingdbForm002
 from django.core.mail import send_mail
 from .utils import searchposts, paginatePosts
-from .models import Product, Collectingdb
+from .models import Product, Collectingdb, Collectingdb002
 class HomeView(FormView):
     # model = Post     
     template_name = 'home.html'
@@ -96,6 +96,24 @@ class CollectdbView(FormView):
         context ['dbdatayesnumber'] = Collectingdb.objects.filter(status2='yes').count()
         return context
 
+
+class CollectdbView002(FormView):
+    # model = Post     
+    template_name = 'collectingdb002.html'
+    form_class = CollectingdbForm002
+
+    success_url = 'successori3'    
+    # fields = ['name', 'number', 'subject', 'body', 'terms_confirmed']
+    # success_url = 'success'    
+    
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)  
+        # .objects.all() 로 진행하니 잘 작동되었음.
+        # context ['blog'] = Blog.objects.get(pk=self.kwargs['pk']) => createview에는 pk가 들어가면 에러남.
+        context ['dbdatanumber'] = Collectingdb002.objects.count()
+        context ['dbdatayesnumber'] = Collectingdb002.objects.filter(status2='yes').count()
+        return context
 class ProductssearchView(FormView):
     # model = Post     
     template_name = 'productssearch.html'
@@ -221,16 +239,26 @@ def successori(request):
     return redirect("successree")
 def successori2(request): 
     send_mail(
-        '[SOTOPLUS] 검사 신청 접수가 들어왔습니다.',
+        '[SOTOPLUS] 토레스 이벤트 신청 접수가 들어왔습니다.',
         '검사 신청 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
         'bluewate02@naver.com',
         ['bluewate02@naver.com'],
     )
     return redirect("successree2")
+def successori3(request): 
+    send_mail(
+        '[SOTOPLUS] 아르카나 검사 신청 접수가 들어왔습니다.',
+        '검사 신청 접수가 들어왔습니다. 관리자페이지를 확인해주세요! https://sotoplus.co.kr/admin/',
+        'bluewate02@naver.com',
+        ['bluewate02@naver.com'],
+    )
+    return redirect("successree3")
 def successree(request): 
     return render(request, 'successree.html', {})    
 def successree2(request): 
-    return render(request, 'successree2.html', {}) 
+    return render(request, 'successree2.html', {})
+def successree3(request): 
+    return render(request, 'successree3.html', {}) 
 def policy(request):
     return render(request, 'policy.html', {})  
 def error_500(request):

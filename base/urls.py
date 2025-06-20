@@ -1,6 +1,6 @@
 from django.urls import path
 from . import views
-from .views import HomeView, NewproductsView, ProductssearchView, ProductsflView, ContactView, CollectdbView
+from .views import HomeView, NewproductsView, ProductssearchView, ProductsflView, ContactView, CollectdbView, CollectdbView002
 urlpatterns = [
     
     path('', HomeView.as_view(), name="home"),
@@ -14,6 +14,7 @@ urlpatterns = [
     path('productsearch', views.productsearch, name="productsearch"),
     path('contact', ContactView.as_view(), name="contact"),
     path('collectingdb', CollectdbView.as_view(), name="collectingdb"),
+    path('collectingdb002', CollectdbView002.as_view(), name="collectingdb002"),
     # path('productssearch', ProductssearchView.as_view(), name="productssearch"),
     
     # product category
@@ -68,8 +69,10 @@ urlpatterns = [
     path('success',views.success , name="success"),
     path('successori',views.successori , name="successori"),
     path('successori2',views.successori2 , name="successori2"),
+    path('successori3',views.successori3 , name="successori3"),
     path('successree',views.successree , name="successree"),
     path('successree2',views.successree2 , name="successree2"),
+    path('successree3',views.successree3 , name="successree3"),
     path('policy',views.policy , name="policy"),
 
     
