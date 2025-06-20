@@ -139,7 +139,7 @@ class Collectingdb(models.Model):
     cate001 = models.CharField(max_length=10, choices=CATE001_CHOICES, null=True, verbose_name='구매/렌탈')
     dhname = models.CharField(max_length=50 ,null=True, verbose_name='치과명')
     name = models.CharField(max_length=50 ,null=True, verbose_name='성함')
-    number = models.CharField(max_length=50 ,null=True, verbose_name='전화번호')
+    number = models.CharField(max_length=50 ,null=True, verbose_name='휴대폰번호')
     # email = models.EmailField(max_length=50 ,null=True, verbose_name='이메일')
 
     # promoperson = models.CharField(max_length=24, default='없음', verbose_name="추천인")   
