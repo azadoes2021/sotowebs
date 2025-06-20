@@ -1,9 +1,9 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views.generic.edit import FormView
 from .forms import AskForm, CollectingdbForm
 from django.core.mail import send_mail
 from .utils import searchposts, paginatePosts
-from .models import Product
+from .models import Product, Collectingdb
 class HomeView(FormView):
     # model = Post     
     template_name = 'home.html'
@@ -89,10 +89,10 @@ class CollectdbView(FormView):
     
     
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)       
+        context = super().get_context_data(**kwargs)  
         # .objects.all() 로 진행하니 잘 작동되었음.
         # context ['blog'] = Blog.objects.get(pk=self.kwargs['pk']) => createview에는 pk가 들어가면 에러남.
-        # context ['blog'] = Blog.objects.all()
+        context ['dbdata'] = Collectingdb.objects.all()
         
         return context
 
