@@ -103,6 +103,10 @@ class Collectingdb(models.Model):
         ('진행중','진행중'),
         ('보류','보류'),
     )
+    STATUS_CHOICES2 = (
+        ('yes','yes'),
+        ('no','no'),        
+    )
     ADDRESS001_CHOICES = (
         ('서울(서울이남)','서울(서울이남)'),
         ('서울(서울이북)','서울(서울이북)'),
@@ -150,6 +154,7 @@ class Collectingdb(models.Model):
     created = models.DateTimeField(auto_now_add=True, verbose_name='등록일')
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='신규', verbose_name='status')
+    status2 = models.CharField(max_length=10, choices=STATUS_CHOICES2, default='no', verbose_name='판매확정여부')
     # input = hidden : dbcode db01 - 문의하기db  db02 -  랜딩페이지 db  db03 - 추가 홍보페이지
 
     terms_confirmed = models.BooleanField(max_length=10, null=True, verbose_name="개인정보 수집 동의")

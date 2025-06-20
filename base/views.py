@@ -92,7 +92,7 @@ class CollectdbView(FormView):
         context = super().get_context_data(**kwargs)  
         # .objects.all() 로 진행하니 잘 작동되었음.
         # context ['blog'] = Blog.objects.get(pk=self.kwargs['pk']) => createview에는 pk가 들어가면 에러남.
-        context ['dbdata'] = Collectingdb.objects.all()
+        context ['dbdatanumber'] = Collectingdb.objects.count()
         
         return context
 
