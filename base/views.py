@@ -93,7 +93,7 @@ class CollectdbView(FormView):
         # .objects.all() 로 진행하니 잘 작동되었음.
         # context ['blog'] = Blog.objects.get(pk=self.kwargs['pk']) => createview에는 pk가 들어가면 에러남.
         context ['dbdatanumber'] = Collectingdb.objects.count()
-        context ['dbdatayesnonumber'] = Collectingdb.objects.filter(status2='yes').count()
+        context ['dbdatayesnumber'] = Collectingdb.objects.filter(status2='yes').count()
         return context
 
 class ProductssearchView(FormView):
